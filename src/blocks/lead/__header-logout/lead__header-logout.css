@@ -1,0 +1,33 @@
+.header-logout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    width: 100%;
+}
+.header__logo {
+    color: white;
+    font-family: 'Robotoslab Regular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 92px;
+    z-index: 10;
+}
+.header__menu {
+    color: white;
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 45px;
+    z-index: 10;
+}
+.header-wrapper {
+    display: flex;
+    margin-right: 83px;
+}
+
+

@@ -1,0 +1,40 @@
+
+.lead__search {
+    display: flex;
+    justify-content: flex-end;
+    margin: 65px auto 80px;
+    width: 600px;
+    height: 60px;
+    background-color: white;
+    border-radius: 100px 100px 100px 100px;
+}
+.lead__submit {
+    background-color: #2f71e5;
+    width: 235px;
+    border-radius: 100px 100px 100px 100px;
+    border: 0;
+    padding: 0;
+    font-family: Roboto Regular;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+.lead__search:hover .lead__submit {
+    background: green;
+    display: block;
+}
+/*.lead__submit:hover {
+    /*background-color: #347eff*/
+    /*background-color: red;
+}*/
+
+.lead__search-place {
+    margin-left: 25px;
+    width: 100%;
+    border:none;
+    font-family: Roboto Regular;
+    font-size: 16px;
+    line-height: 22px;
+    outline: none;
+}

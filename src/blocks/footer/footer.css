@@ -1,0 +1,11 @@
+@import url(./__copyright/footer__copyright.css);
+@import url(./__link/footer__link.css);
+@import url(./__logo-group/footer__logo-group.css);
+
+.footer {
+    display: flex;
+    background-color: #fff;
+    padding-top: 90px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}

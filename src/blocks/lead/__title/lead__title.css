@@ -1,0 +1,10 @@
+.lead__title {
+    color: white;
+    font-family: 'Robotoslab Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 64px;
+    width: 500px;
+    padding-right: 100px;
+}

@@ -4,11 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mesto</title>
+  <meta name="description" content="Поиск новостей">
+  <meta name="keywords" content="Новости, что нового">
+  <meta name="author" content="Алексей Коньков">
+  <title>NewsExplorer</title>
+  <link rel="icon" href="../src/images/Rectangle 2.svg">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 <body>
-  <h1>Hello</h1>
-  <script src="./main.js"></script>
+  <div class="page">
+    <section class="lead">
+      <header class="header-logout">
+        <div class="header-wrapper">
+            <h3 class="header__logo">NewsAnalizer</h3>
+        </div>
+        <div class="header-wrapper">
+            <p class="header__menu">Главная</h3>
+            <p class="header__menu">О проекте</h3>
+            <p class="header__menu">Авторизоваться</h3>
+        </div>
+      </header>
+      <h1 class="lead__title lead__title-position">Что в мире творится?</h1>
+      <h2 class="lead__subtitle lead__subtitle-position">Находите самые свежие статьи на любую тему и сохраняйте в своем личном кабинете</h2>
+      <form class="lead__search">
+        <input type="text" class="lead__search-place" placeholder="Введите тему новости">
+        <button type="submit" class="lead__submit">Искать</button>
+      </form>
+    </section>
+    <section class="preloader">
+        <i class="circle-preloader"></i>
+        <p class="preloader-comment">Идет поиск новостей</p>
+    </section>
+    <section class="news-list">
+      <div class="news-card"></div>
+      <div class="news-card"></div>
+      <div class="news-card"></div>
+    </section>
+    <section class="about">
+      <img src="../src/images/imageauthor.jpg" alt="Фото автора" class="about__avatar about__avatar-position">
+      <div class="about__paragraph about__paragraph-position">
+        <h3 class="about__title">Об авторе</h3>
+        <p class="about__description">Это блок с описанием автора проекта. Здесь следует указать как вас зовут,
+           чем вы занимаетесь, какими технологиями разработки владеете.</p>
+        <p class="about__description">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
+           и чем можете помочь потенциальным заказчикам.</p>
+      </div>
+    </section>
+    <div class="popup">
+        <div class="popup__content">
+          <img src="../src/images/close.svg" alt="cross" class="popup__close">
+          <h3 class="popup__title">Регистрация</h3>
+          <form class="popup__form">
+            <p class="popup__column-name">Email</p>
+            <input type="email" required autocomplete="off" class="popup__input popup__input_type_name" placeholder="Введите почту">
+            <span id="error-email"></span> 
+            <p class="popup__column-name">Пароль</p>
+            <input type="password" required autocomplete="off" class="popup__input popup__input_type_link-url" placeholder="Введите пароль">
+            <span id="error-password"></span>
+            <p class="popup__column-name">Имя</p>
+            <input input type="text"  minlength=2 maxlength="30" required autocomplete="off" class="popup__input popup__input_type_name" placeholder="Введите свое имя">
+            <span id="error-name"></span>
+            <button type class="popup__button">Зарегистрироваться</button>
+            <p class="popup__enter-alternative">или <a href="" class="popup__link">Войти</a></p>
+          </form>
+        </div>
+      </div>
+      <div class="popup" id="login" >
+          <div class="popup__content">
+            <img src="../src/images/close.svg" alt="cross" class="popup__close">
+            <h3 class="popup__title">Вход</h3>
+            <form class="popup__form">
+              <p class="popup__column-name">Email</p>
+              <input type="email" required autocomplete="off" class="popup__input popup__input_type_name" placeholder="Введите почту">
+              <span id="error-email"></span>
+              <p class="popup__column-name">Пароль</p>
+              <input type="password" required autocomplete="off" class="popup__input popup__input_type_link-url" placeholder="Введите пароль">
+              <span id="error-password"></span>
+              <button type class="popup__button">Войти</button>
+              <p class="popup__enter-alternative">или <a href="" class="popup__link">Зарегистрироваться</a></p>
+            </form>
+          </div>
+      </div>
+      <div class="popup">
+        <div class="popup__content popup__content_resume">
+          <h3 class="popup__title">Пользователь успешно зарегистрирован</h3>
+          <p class="popup__enter-link"><a href="" class="popup__enter-link">Выполнить вход</a></p>
+          <img src="../src/images/close.svg" alt="cross" class="popup__close">
+        </div>
+      </div>
+    <footer class="footer">
+      <p class="footer__copyright"><span class="big-mark">&reg;</span>2019 Supersite</p>
+      <div class="footer__link footer__link">
+        <a href="" class="link-property">Главная</a>
+        <a href="" class="link-property">О проекте</a>
+        <a href="https://praktikum.yandex.ru/profile/web-developer/" class="link-property">Яндекс.Практикум</a>
+      </div>
+      <div class="footer__logo-group">
+        <a href="https://github.com/Al5kon"target="blank"><img src="../src/images/VectorGH.svg" class="footer__logo"></a>
+        <a href="https://www.facebook.com/" target="blank"><img src="../src/images/VectorFB.svg" class="footer__logo"></a>
+      </div>
+    </footer>
+      <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  </div>
 </body>
 </html>

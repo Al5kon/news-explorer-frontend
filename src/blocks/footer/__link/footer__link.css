@@ -1,0 +1,14 @@
+.footer__link {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+.link-property {
+    font-family: Roboto Regular;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1a1b22;
+    text-decoration: none;
+}

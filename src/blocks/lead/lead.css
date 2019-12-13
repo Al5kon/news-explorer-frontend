@@ -1,0 +1,18 @@
+@import url(./__header-logout/lead__header-logout.css);
+@import url(./__search/lead__search.css);
+@import url(./__title/lead__title.css);
+@import url(./__subtitle/lead__subtitle.css);
+
+.lead {
+    width: 100%;
+    background-image: url('../../images/georgia.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lead__title-position {
+    margin: 80px auto 0;
+}
+.lead__subtitle-position {
+    margin: 35px auto 0;
+}

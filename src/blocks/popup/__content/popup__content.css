@@ -1,0 +1,24 @@
+.popup__content {
+  width: 430px;
+  /*min-height: 330px;*/
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 34px 36px 15px 36px;
+  margin-bottom: 24%;
+}
+.popup__content_resume {
+  margin-bottom: 37%;
+  width: 420px;
+  padding: 44px 36px 24px 36px;
+}
+.popup__enter-link {
+  text-decoration: none;
+  font-family: 'Roboto Regular';
+  font-size: 18px;
+  line-height: 22px;
+  color: #2f71e5;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}

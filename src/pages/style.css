@@ -1,3 +1,27 @@
+@import url(../../vendor/normalize.css);
+@import url(../../vendor/fonts.css);
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/preloader/preloader.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/about/about.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup-resume/popup-resume.css);
+@import url(../blocks/news-list/news-list.css);
+
 body {
-  background-color: #fff;
+    background-color: #e5e5e5;
 }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: auto;
+  height: auto;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
