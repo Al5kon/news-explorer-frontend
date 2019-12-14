@@ -5,8 +5,10 @@
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/about/about.css);
 @import url(../blocks/popup/popup.css);
-@import url(../blocks/popup-resume/popup-resume.css);
 @import url(../blocks/news-list/news-list.css);
+@import url(../blocks/news-card/news-card.css);
+@import url(../blocks/result-of-search/result-of-search.css);
+@import url(../blocks/news-not-found/news-not-found.css);
 
 body {
     background-color: #e5e5e5;

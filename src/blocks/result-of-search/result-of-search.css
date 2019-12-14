@@ -1,0 +1,18 @@
+.result-of-search__see-more {
+    border-radius: 100px 100px 100px 100px;
+    background-color: #fff;
+    width: 288px;
+    height: 64px;
+    border: 0;
+    font-family: 'Roboto Regular';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 64px auto 80px auto;
+}
+.result-of-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

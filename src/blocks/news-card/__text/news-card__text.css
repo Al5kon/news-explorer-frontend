@@ -1,0 +1,10 @@
+.news-card__text {
+    font-family: Roboto Regular;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1a1b22;
+    font-weight: normal;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 16px;
+}

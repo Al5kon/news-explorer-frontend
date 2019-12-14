@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Поиск новостей">
+  <meta name="keywords" content="Новости, что нового">
+  <meta name="author" content="Алексей Коньков">
+  <title>NewsExplorer</title>
+  <link rel="icon" href="../src/images/Rectangle 2.svg">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+  <div class="page">
+    <section class="lead">
+      <header class="header-logout">
+        <div class="header-wrapper">
+            <h3 class="header__logo">NewsExplorer</h3>
+        </div>
+        <div class="header-wrapper">
+              <p class="header__menu header__bottom-line header__color-active">Главная</p>
+              <p class="header__menu header__color-not-active">О проекте</p>
+              <p class="header__menu header__kill header__color-not-active">Сохраненные статьи</p>
+            <button type="submit" class="header__button header__color-active">Авторизоваться</button>
+        </div>
+      </header>
+    </section>
+    <section class="about">
+      <img src="../src/images/imageauthor.jpg" alt="Фото автора" class="about__avatar about__avatar-position">
+      <div class="about__paragraph about__paragraph-position">
+        <h3 class="about__title">Об авторе</h3>
+        <p class="about__description">Это блок с описанием автора проекта. Здесь следует указать как вас зовут,
+           чем вы занимаетесь, какими технологиями разработки владеете.</p>
+        <p class="about__description">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
+           и чем можете помочь потенциальным заказчикам.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer__copyright"><span class="big-mark">&reg;</span>2019 Supersite</p>
+      <div class="footer__link footer__link">
+        <a href="index.html" class="link-property">Главная</a>
+        <a href="" class="link-property">О проекте</a>
+        <a href="https://praktikum.yandex.ru/profile/web-developer/" class="link-property">Яндекс.Практикум</a>
+      </div>
+      <div class="footer__logo-group">
+        <a href="https://github.com/Al5kon"target="blank"><img src="../src/images/VectorGH.svg" class="footer__logo"></a>
+        <a href="https://www.facebook.com/" target="blank"><img src="../src/images/VectorFB.svg" class="footer__logo"></a>
+      </div>
+    </footer>
+      <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  </div>
+</body>
+</html>

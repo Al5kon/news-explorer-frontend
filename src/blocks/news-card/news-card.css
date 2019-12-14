@@ -1,0 +1,10 @@
+@import url(./__image/news-card__image.css);
+@import url(./__name/news-card__name.css);
+@import url(./__text/news-card__text.css);
+@import url(./__date/news-card__date.css);
+@import url(./__source/news-card__source.css);
+
+.news-card {
+    background-color: #fff;
+    border-radius: 5%;
+}
