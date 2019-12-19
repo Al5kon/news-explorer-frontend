@@ -8,7 +8,7 @@ const isDev = process.env.NODE_ENV === 'development';
 // создаем переменную для development-сборки
 
 module.exports = {
-    entry: { main: './src/index.js' },
+    entry: { main: './src/index.js', pageTwo: './src/index.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js',
@@ -46,11 +46,24 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             // Означает, что:
-            inject: false, // стили НЕ нужно прописывать внутри тегов
-            hash: true, // для страницы нужно считать хеш
-            template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
+            inject: false, // стили нельзя прописывать внутри тегов
+            template: './src/index.html',// откуда брать образец для сравнения с текущим видом проекта
             filename: 'index.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
         }),
+        new HtmlWebpackPlugin({
+            // Означает, что:
+            inject: false, // стили нельзя прописывать внутри тегов
+            template: './src/saved-news.html',// откуда брать образец для сравнения с текущим видом проекта
+            filename: 'saved-news.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
+        }),
+        new HtmlWebpackPlugin({
+            // Означает, что:
+            inject: false, // стили нельзя прописывать внутри тегов
+            template: './src/about.html',// откуда брать образец для сравнения с текущим видом проекта
+            filename: 'about.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
+        }),
+        new WebpackMd5Hash(),
+        new WebpackMd5Hash(),
         new WebpackMd5Hash(),
         new webpack.DefinePlugin({
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV)

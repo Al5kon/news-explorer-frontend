@@ -9,9 +9,13 @@
 @import url(../blocks/news-card/news-card.css);
 @import url(../blocks/result-of-search/result-of-search.css);
 @import url(../blocks/news-not-found/news-not-found.css);
+@import url(../blocks/__header-logout/header-logout.css);
+@import url(../blocks/text/text.css);
+@import url(../blocks/technology-list/technology-list.css);
 
 body {
     background-color: #e5e5e5;
+    cursor: pointer;
 }
 
 .page {

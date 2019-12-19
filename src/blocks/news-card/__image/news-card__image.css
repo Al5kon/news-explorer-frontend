@@ -12,6 +12,7 @@
     position: absolute;
     top: 24px;
     right: 24px;
+    cursor: pointer;
 }
 .news-card__note {
     width: 182px;

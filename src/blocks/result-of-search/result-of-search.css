@@ -1,3 +1,6 @@
+@import url('./__resume/result-of-search__resume.css');
+@import url('./__first-block/result-of-search__first-block.css');
+
 .result-of-search__see-more {
     border-radius: 100px 100px 100px 100px;
     background-color: #fff;
@@ -8,11 +11,11 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
-    margin: 64px auto 80px auto;
+    margin: 0 auto 80px auto;
 }
 .result-of-search {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    background-color: #f5f6f7;
 }

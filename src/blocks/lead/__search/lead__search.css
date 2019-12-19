@@ -19,15 +19,22 @@
     font-size: 18px;
     line-height: 24px;
     color: #fff;
+    outline: none;
+    cursor: pointer;
 }
-.lead__search:hover .lead__submit {
-    background: green;
+.lead__search:focus-within .lead__submit{
+    background:#347eff;
     display: block;
 }
-/*.lead__submit:hover {
-    /*background-color: #347eff*/
-    /*background-color: red;
-}*/
+
+.lead__submit:hover {
+    background: #347eff;
+    display: block;
+}
+.lead__submit:active:hover {
+    background: #2a65cc;
+    display: block;
+}
 
 .lead__search-place {
     margin-left: 25px;

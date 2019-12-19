@@ -1,0 +1,27 @@
+.result-of-search__resume {
+    padding-left: 104px;
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+.result-of-search__resume-head {
+    font-family: 'Roboto Regular';
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(26, 27, 34, 0.5);
+    padding-top: 20px;
+}
+.result-of-search__resume-pharagraph-one {
+    font-family: 'Robotoslab Regular';
+    font-size: 40px;
+    line-height: 46px;
+    color: #1a1b22;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+.result-of-search__resume-pharagraph-two {
+    font-family: 'Roboto Regular';
+    font-size: 18px;
+    line-height: 24px;
+    color: #1a1b22;
+    margin-top: 10px;
+}
