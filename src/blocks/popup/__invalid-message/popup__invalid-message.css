@@ -1,8 +1,11 @@
 .popup__invalid-message {
-    font-size: 12px;
-    line-height: 14px;
-    color: #ff0000;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: normal;
+  color: #ff0000;
 }
 .popup__invalid-message:first-of-type {
-    margin-top: -20px;
+  margin-top: -20px;
 }

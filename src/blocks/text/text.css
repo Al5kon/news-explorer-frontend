@@ -1,27 +1,13 @@
+@import url(./__wrapper/text__wrapper.css);
+@import url(./__title/text__title.css);
+@import url(./__main/text__main.css);
+
 .text {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 45px;
-    padding-bottom: 50px;
-}
-.text__wrapper {
-    max-width: 815px;
-    padding-left: 104px;
-}
-.text__title {
-    font-family: 'Robotoslab Regular';
-    font-size: 40px;
-    line-height: 46px;
-    color: #1a1b22;
-    padding-left: 104px;
-    margin-bottom: 10px;
-}
-.text__main {
-    font-family: 'Roboto Regular';
-    font-size: 18px;
-    line-height: 24px;
-    color: #1a1b22;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 45px;
+  padding-bottom: 50px;
 }

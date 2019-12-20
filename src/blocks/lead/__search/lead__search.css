@@ -1,47 +1,49 @@
-
 .lead__search {
-    display: flex;
-    justify-content: flex-end;
-    margin: 65px auto 80px;
-    width: 600px;
-    height: 60px;
-    background-color: white;
-    border-radius: 100px 100px 100px 100px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 65px auto 80px;
+  width: 600px;
+  height: 60px;
+  background-color: white;
+  border-radius: 100px 100px 100px 100px;
 }
 .lead__submit {
-    background-color: #2f71e5;
-    width: 235px;
-    border-radius: 100px 100px 100px 100px;
-    border: 0;
-    padding: 0;
-    font-family: Roboto Regular;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #fff;
-    outline: none;
-    cursor: pointer;
+  background-color: #2f71e5;
+  width: 235px;
+  border-radius: 100px 100px 100px 100px;
+  border: 0;
+  padding: 0;
+  font-family: Roboto Regular;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
 }
-.lead__search:focus-within .lead__submit{
-    background:#347eff;
-    display: block;
+.lead__search:focus-within .lead__submit {
+  background: #347eff;
+  display: block;
 }
 
 .lead__submit:hover {
-    background: #347eff;
-    display: block;
+  background: #347eff;
+  display: block;
 }
 .lead__submit:active:hover {
-    background: #2a65cc;
-    display: block;
+  background: #2a65cc;
+  display: block;
 }
 
 .lead__search-place {
-    margin-left: 25px;
-    width: 100%;
-    border:none;
-    font-family: Roboto Regular;
-    font-size: 16px;
-    line-height: 22px;
-    outline: none;
+  margin-left: 25px;
+  width: 100%;
+  border: none;
+  font-family: Roboto Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  outline: none;
 }

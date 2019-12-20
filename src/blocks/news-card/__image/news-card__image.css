@@ -1,39 +1,7 @@
 .news-card__image {
-    width: 100%;
-    height: 272px;
-    background-image: url("../../../images/image_08.png");
-    border-radius: 5% 5% 0 0;
-    position: relative;
-}
-.news-card__save-icon {
-    background-image: url(../../../images/savecard-nothover.svg);
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    cursor: pointer;
-}
-.news-card__note {
-    width: 182px;
-    height: 40px;
-    position: absolute;
-    top: 24px;
-    right: 69px;
-    background-color: #fff;
-    border-radius: 10px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-.news-card__note-text {
-    font-family: 'Roboto Medium';
-    font-size: 10px;
-    line-height: 12px;
-    font-weight: 500;
-    font-style: normal;
-    color: black;
-}
-news-card__save-icon:hover news-card__note {
-    display: flex;
+  width: 100%;
+  height: 272px;
+  background-image: url("../../../images/image_08.png");
+  border-radius: 5% 5% 0 0;
+  position: relative;
 }

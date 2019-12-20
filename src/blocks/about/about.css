@@ -1,18 +1,17 @@
 @import url(./__avatar/about__avatar.css);
 @import url(./__paragraph/about__paragraph.css);
-
 @import url(./__avatar/about__avatar.css);
 @import url(./__paragraph/about__paragraph.css);
 
 .about {
-    display: flex;
-    background-color: #fff;
-    padding-bottom: 70px;
+  display: flex;
+  background-color: #fff;
+  padding-bottom: 70px;
 }
 .about__avatar-position {
-    margin-top: 82px;
-    margin-left: 98px;
+  margin-top: 82px;
+  margin-left: 98px;
 }
 .about__paragraph-position {
-    margin: 97px auto auto 67px;
+  margin: 97px auto auto 67px;
 }

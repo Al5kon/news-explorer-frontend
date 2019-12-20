@@ -1,30 +1,19 @@
+@import url(./__circle/preloader__circle.css);
+@import url(./__comment/preloader__comment.css);
 
-.circle-preloader {
-	width: 65px;
-	height: 65px;
-	border: 4px solid #444;
-	border-bottom-color: #888;
-	border-radius: 50%;
-	animation: spin .75s infinite linear;
-}
 .preloader {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 262px;
-	background-color: #f5f6f7;
-	padding-top: 20px;
-	display:none;
-}
-.preloader-comment {
-	font-family: Roboto Regular;
-	font-size: 18px;
-	line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 262px;
+  background-color: #f5f6f7;
+  padding-top: 20px;
+  display: none;
 }
 
 @keyframes spin {
-	100% {
-		transform: rotate(360deg);
-	}
+  100% {
+    transform: rotate(360deg);
+  }
 }

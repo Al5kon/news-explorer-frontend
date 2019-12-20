@@ -9,13 +9,16 @@
 @import url(../blocks/news-card/news-card.css);
 @import url(../blocks/result-of-search/result-of-search.css);
 @import url(../blocks/news-not-found/news-not-found.css);
-@import url(../blocks/__header-logout/header-logout.css);
+@import url(../blocks/header-logout/header-logout.css);
 @import url(../blocks/text/text.css);
 @import url(../blocks/technology-list/technology-list.css);
+@import url(../blocks/slider/slider.css);
+@import url(../blocks/carousel/carousel.css);
+@import url(../blocks/carousel-cell/carousel-cell.css);
 
 body {
-    background-color: #e5e5e5;
-    cursor: pointer;
+  background-color: #e5e5e5;
+  cursor: pointer;
 }
 
 .page {
@@ -30,4 +33,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+@media screen and (max-width: 320px) {
+  .page {
+    max-width: 320px;
+    min-width: 320px;
+    overflow: scroll;
+  }
+}

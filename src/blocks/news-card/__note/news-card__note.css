@@ -1,0 +1,12 @@
+.news-card__note {
+  width: 182px;
+  height: 40px;
+  position: absolute;
+  top: 24px;
+  right: 69px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}

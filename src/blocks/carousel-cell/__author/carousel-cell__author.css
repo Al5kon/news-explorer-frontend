@@ -1,0 +1,5 @@
+.carousel-cell__author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}

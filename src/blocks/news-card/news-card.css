@@ -3,8 +3,11 @@
 @import url(./__text/news-card__text.css);
 @import url(./__date/news-card__date.css);
 @import url(./__source/news-card__source.css);
+@import url(./__save-icon/news-card__save-icon.css);
+@import url(./__note/news-card__note.css);
+@import url(./__note-text/news-card__note-text.css);
 
 .news-card {
-    background-color: #fff;
-    border-radius: 5%;
+  background-color: #fff;
+  border-radius: 5%;
 }

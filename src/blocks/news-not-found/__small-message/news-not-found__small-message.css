@@ -1,0 +1,11 @@
+.news-not-found__small-message {
+  width: 336px;
+  font-family: "Roboto Regular";
+  color: #b6bcbf;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}

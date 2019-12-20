@@ -1,0 +1,6 @@
+.technology-list__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-right: 230px;
+}

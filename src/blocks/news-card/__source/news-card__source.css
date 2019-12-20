@@ -1,11 +1,12 @@
 .news-card__source {
-    font-family: Robotoslab Regular;
-    font-size: 16px;
-    line-height: 20px;
-    color: #b6bcbf;
-    font-weight: bold;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 22px;
-    margin-top: 20px;
+  font-family: Robotoslab Regular;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b6bcbf;
+  font-weight: bold;
+  font-style: normal;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 22px;
+  margin-top: 20px;
 }

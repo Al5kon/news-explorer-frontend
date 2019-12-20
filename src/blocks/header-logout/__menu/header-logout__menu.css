@@ -1,0 +1,14 @@
+.header-logout__menu {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 45px;
+  z-index: 10;
+  height: 100%;
+  margin-bottom: 0;
+  padding-bottom: 28px;
+  padding-top: 20px;
+  text-decoration: none;
+}

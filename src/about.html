@@ -1,124 +1,320 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Поиск новостей">
-  <meta name="keywords" content="Новости, что нового">
-  <meta name="author" content="Алексей Коньков">
-  <title>NewsExplorer</title>
-  <!--<link rel="icon" href="<%=require('../src/images/favicon.ico') %>">-->
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  <!--<link rel="stylesheet" href="../src/pages/style.css">-->
-</head>
-<body>
-  <div class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Поиск новостей" />
+    <meta name="keywords" content="Новости, что нового" />
+    <meta name="author" content="Алексей Коньков" />
+    <title>NewsExplorer</title>
+    <!--<link rel="icon" href="<%=require('../src/images/favicon.ico') %>">-->
+    <link
+      rel="stylesheet"
+      href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
+    />
+    <!--<link rel="stylesheet" href="../src/pages/style.css">-->
+  </head>
+  <body>
+    <div class="page">
       <header class="header-logout header-logout_white">
-          <div class="header-wrapper">
-              <h3 class="header-logout__logo header-logout__logo_white">NewsExplorer</h3>
-          </div>
-          <div class="header-wrapper">
-                <a href="#" class="header-logout__menu header-logout_grey-letters">Главная</a>
-                <a href="#" class="header-logout__menu header-logout__bottom-line header-logout_black-letters">О проекте</a>
-                <a href="#" class="header-logout__menu header-logout_grey-letters">Сохранённые статьи</a>
-              <button type="submit" class="header-logout__button header-logout_black-letters">Авторизоваться</button>
-          </div>
+        <div class="header-wrapper">
+          <h3 class="header-logout__logo header-logout__logo_white">
+            NewsExplorer
+          </h3>
+        </div>
+        <div class="header-wrapper">
+          <a href="#" class="header-logout__menu header-logout_grey-letters"
+            >Главная</a
+          >
+          <a
+            href="#"
+            class="header-logout__menu header-logout__bottom-line header-logout_black-letters"
+            >О проекте</a
+          >
+          <a href="#" class="header-logout__menu header-logout_grey-letters"
+            >Сохранённые статьи</a
+          >
+          <button
+            type="submit"
+            class="header-logout__button header-logout_black-letters"
+          >
+            Авторизоваться
+          </button>
+        </div>
       </header>
       <section class="text">
-          <h2 class="text__title">Клиентам</h2>
-          <div class="text__wrapper">
-                <p class="text__main">Этот сайт &ndash; дипломный проект студента Яндекс.Практикума. Его цель &ndash; показать, чему
-                        научился студент, какими технологиями владеет.<br><br>
-                         Верстка сайта выполнена по методологии БЭМ. Это делает
-                        сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, 
-                        чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.<br><br>
-                        Студент самостоятельно написал серверный код. В нем реализована функциональность регистрации и входа в систему.
-                        Сайт позволяет искать новости за прошедшую неделю и сохранять понравившиеся в личном кабинете. На сервере 
-                        избранные новости хранятся в базе данных Mongo DB. Студент запрограммировал надежный сервер: отказоустойчивый и 
-                        безопасный.<br><br> При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов.
-                        Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители &ndash; пользователи 
-                        старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.<br><br> Проект 
-                        был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к 
-                        этому студенту.
-                </p>
-          </div>
+        <h2 class="text__title">Клиентам</h2>
+        <div class="text__wrapper">
+          <p class="text__main">
+            Этот сайт &ndash; дипломный проект студента Яндекс.Практикума. Его
+            цель &ndash; показать, чему научился студент, какими технологиями
+            владеет.<br /><br />
+            Верстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и
+            масштабируемым. Кроме того, добавлять новые страницы и
+            функциональность проще и быстрее, чем в проектах, выполненных по
+            другим методологиям. Также сайт проще и дешевле поддерживать.<br /><br />
+            Студент самостоятельно написал серверный код. В нем реализована
+            функциональность регистрации и входа в систему. Сайт позволяет
+            искать новости за прошедшую неделю и сохранять понравившиеся в
+            личном кабинете. На сервере избранные новости хранятся в базе данных
+            Mongo DB. Студент запрограммировал надежный сервер: отказоустойчивый
+            и безопасный.<br /><br />
+            При создании проекта была использована сборка технологией Webpack.
+            Это современный подход к разработке сайтов. Код оптимизируется, а
+            значит, сайт работает быстрее. Также сайт работает в старых
+            браузерах. Даже если посетители &ndash; пользователи старых
+            операционных систем, у них не будет проблем с отображением. А
+            значит, потенциальная аудитория возрастает.<br /><br />
+            Проект был проверен экспертами Яндекс.Практикума. Если вашему
+            бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.
+          </p>
+        </div>
       </section>
       <section class="technology-list">
-            <h2 class="technology-list__title">Используемые технологии</h2>
-            <div class="technology-list__wrapper">
-                <div class="technology-list__unit">
-                    <p class="technology-list_unit-name">HTML</p>
-                        <svg width="88" height="97" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h88l-7.603 87.532L44 97 7.929 87.532 0 0z"
-                              fill="#D1D2D6" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M22.553 18.145h48.15l-2.265 26.981-1.743 27.394-22.637 5.9-20.98-5.936-1.508-14.231 9.724-1.02.815 7.692 12.054 3.41 13.22-3.445.97-15.255H37.277v-9.73h21.787l1.01-12.031h-37.52v-9.729z"
-                              fill="#F5F6F7" />
-                          </svg>
-                </div>
-                <div class="technology-list__unit">
-                        <p class="technology-list_unit-name">CSS</p>
-                        <svg width="88" height="97" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h88l-7.603 87.532L44 97 7.929 87.532 0 0z"
-                            fill="#D1D2D6"/>
-                             <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M18.483 18.158h51.123v9.7H29.071l.97 12.061h38.73l-2.073 32.585-22.639 5.901-20.981-5.936-1.506-14.22 9.724-1.013.816 7.702 12.053 3.41 13.219-3.445.972-15.284H21.011l-2.528-31.46z"
-                            fill="#F5F6F7"/></svg>
-                </div>
-                <div class="technology-list__unit">
-                        <p class="technology-list_unit-name">Java Script</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" fill="none">
-                            <defs />
-                            <path fill="#D1D2D6" d="M0 0h92v92H0V0z" />
-                            <path fill="#F5F6F7"
-                              d="M24.191 76.882l7.04-4.26c1.359 2.408 2.595 4.445 5.558 4.445 2.841 0 4.632-1.111 4.632-5.434V42.237h8.646v29.519c0 8.954-5.249 13.03-12.907 13.03-6.916 0-10.931-3.582-12.969-7.904M54.76 75.954l7.04-4.075c1.853 3.026 4.261 5.249 8.522 5.249 3.583 0 5.867-1.791 5.867-4.261 0-2.965-2.346-4.015-6.299-5.743l-2.16-.927c-6.239-2.655-10.376-5.99-10.376-13.03 0-6.485 4.94-11.425 12.66-11.425 5.496 0 9.449 1.914 12.289 6.916l-6.731 4.323c-1.483-2.655-3.088-3.705-5.558-3.705-2.532 0-4.138 1.606-4.138 3.705 0 2.594 1.606 3.644 5.31 5.25l2.162.926c7.35 3.15 11.487 6.36 11.487 13.586 0 7.782-6.114 12.043-14.327 12.043-8.028 0-13.216-3.829-15.748-8.832" />
-                          </svg>
-                </div>
-                <div class="technology-list__unit">
-                        <p class="technology-list_unit-name">Webpack</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="100" fill="none">
-                            <defs />
-                            <path fill="#D1D2D6"
-                              d="M86.83 76.8L46.68 99.51V81.83L71.7 68.07l15.13 8.73zm2.75-2.48v-47.5l-14.68 8.5v30.52l14.68 8.48zM3.01 76.8l40.15 22.71V81.83L18.13 68.07 3.01 76.8zM.26 74.32v-47.5l14.69 8.5v30.52L.26 74.32zM2 23.75L43.16.46v17.1l-26.38 14.5-.21.12-14.58-8.43zm85.87 0L46.68.46v17.1l26.39 14.5.2.11 14.59-8.42zM43.16 77.8L18.47 64.22V37.34L43.16 51.6V77.8zm3.52 0l24.69-13.56v-26.9L46.68 51.6V77.8zM20.14 34.24l24.78-13.62L69.7 34.24l-24.78 14.3-24.78-14.3z" />
-                          </svg>
-                </div>
+        <h2 class="technology-list__title">Используемые технологии</h2>
+        <div class="technology-list__wrapper">
+          <div class="technology-list__unit">
+            <p class="technology-list__unit-name">HTML</p>
+            <svg
+              width="88"
+              height="97"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0h88l-7.603 87.532L44 97 7.929 87.532 0 0z"
+                fill="#D1D2D6"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22.553 18.145h48.15l-2.265 26.981-1.743 27.394-22.637 5.9-20.98-5.936-1.508-14.231 9.724-1.02.815 7.692 12.054 3.41 13.22-3.445.97-15.255H37.277v-9.73h21.787l1.01-12.031h-37.52v-9.729z"
+                fill="#F5F6F7"
+              />
+            </svg>
+          </div>
+          <div class="technology-list__unit">
+            <p class="technology-list__unit-name">CSS</p>
+            <svg
+              width="88"
+              height="97"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0h88l-7.603 87.532L44 97 7.929 87.532 0 0z"
+                fill="#D1D2D6"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.483 18.158h51.123v9.7H29.071l.97 12.061h38.73l-2.073 32.585-22.639 5.901-20.981-5.936-1.506-14.22 9.724-1.013.816 7.702 12.053 3.41 13.219-3.445.972-15.284H21.011l-2.528-31.46z"
+                fill="#F5F6F7"
+              />
+            </svg>
+          </div>
+          <div class="technology-list__unit">
+            <p class="technology-list__unit-name">Java Script</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="92"
+              height="92"
+              fill="none"
+            >
+              <defs />
+              <path fill="#D1D2D6" d="M0 0h92v92H0V0z" />
+              <path
+                fill="#F5F6F7"
+                d="M24.191 76.882l7.04-4.26c1.359 2.408 2.595 4.445 5.558 4.445 2.841 0 4.632-1.111 4.632-5.434V42.237h8.646v29.519c0 8.954-5.249 13.03-12.907 13.03-6.916 0-10.931-3.582-12.969-7.904M54.76 75.954l7.04-4.075c1.853 3.026 4.261 5.249 8.522 5.249 3.583 0 5.867-1.791 5.867-4.261 0-2.965-2.346-4.015-6.299-5.743l-2.16-.927c-6.239-2.655-10.376-5.99-10.376-13.03 0-6.485 4.94-11.425 12.66-11.425 5.496 0 9.449 1.914 12.289 6.916l-6.731 4.323c-1.483-2.655-3.088-3.705-5.558-3.705-2.532 0-4.138 1.606-4.138 3.705 0 2.594 1.606 3.644 5.31 5.25l2.162.926c7.35 3.15 11.487 6.36 11.487 13.586 0 7.782-6.114 12.043-14.327 12.043-8.028 0-13.216-3.829-15.748-8.832"
+              />
+            </svg>
+          </div>
+          <div class="technology-list__unit">
+            <p class="technology-list__unit-name">Webpack</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="90"
+              height="100"
+              fill="none"
+            >
+              <defs />
+              <path
+                fill="#D1D2D6"
+                d="M86.83 76.8L46.68 99.51V81.83L71.7 68.07l15.13 8.73zm2.75-2.48v-47.5l-14.68 8.5v30.52l14.68 8.48zM3.01 76.8l40.15 22.71V81.83L18.13 68.07 3.01 76.8zM.26 74.32v-47.5l14.69 8.5v30.52L.26 74.32zM2 23.75L43.16.46v17.1l-26.38 14.5-.21.12-14.58-8.43zm85.87 0L46.68.46v17.1l26.39 14.5.2.11 14.59-8.42zM43.16 77.8L18.47 64.22V37.34L43.16 51.6V77.8zm3.52 0l24.69-13.56v-26.9L46.68 51.6V77.8zM20.14 34.24l24.78-13.62L69.7 34.24l-24.78 14.3-24.78-14.3z"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <img
+          src="<%=require('./images/imageauthor.jpg')%>"
+          alt="Фото автора"
+          class="about__avatar about__avatar-position"
+        />
+        <div class="about__paragraph about__paragraph-position">
+          <h3 class="about__title">Об авторе</h3>
+          <p class="about__description">
+            Это блок с описанием автора проекта. Здесь следует указать как вас
+            зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+          </p>
+          <p class="about__description">
+            Также можно рассказать о процессе обучения в Практикуме, чему вы тут
+            научились, и чем можете помочь потенциальным заказчикам.
+          </p>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="slider__header">
+          <h3 class="slider__header-title">История коммитов из GitHub</h3>
+          <a href="https://github.com/Al5kon" class="slider__header-link"
+            >Открыть в GitHub ></a
+          >
+        </div>
+        <div class="carousel">
+          <div class="carousel-cell">
+            <div class="carousel-cell__date">Дата</div>
+            <div class="carousel-cell__author">
+              <img
+                src="<%=require('./images/avatar.jpg')%>"
+                class="carousel-cell__photo"
+                alt="author"
+              />
+              <div class="carousel-cell__contacts">
+                <p class="carousel-cell__name">Антон Долинин</p>
+                <p class="carousel-cell__email">anton@yandex.ru</p>
+              </div>
             </div>
-        </section>
-        <section class="about">
-                <img src="<%=require('./images/imageauthor.jpg')%>" alt="Фото автора" class="about__avatar about__avatar-position">
-                <div class="about__paragraph about__paragraph-position">
-                  <h3 class="about__title">Об авторе</h3>
-                  <p class="about__description">Это блок с описанием автора проекта. Здесь следует указать как вас зовут,
-                     чем вы занимаетесь, какими технологиями разработки владеете.</p>
-                  <p class="about__description">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
-                     и чем можете помочь потенциальным заказчикам.</p>
-                </div>
-        </section>
-    <footer class="footer">
-      <p class="footer__copyright"><span class="big-mark">&reg;</span>2019 Supersite</p>
-      <div class="footer__link footer__link">
-        <a href="#" class="link-property">Главная</a>
-        <a href="#" class="link-property">О проекте</a>
-        <a href="https://praktikum.yandex.ru/profile/web-developer/" class="link-property">Яндекс.Практикум</a>
-      </div>
-      <div class="footer__logo-group">
-        <a href="https://github.com/Al5kon"target="blank">
-          <svg width="22" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 .895C5.417.895.895 5.423.895 11c0 4.466 2.897 8.25 6.91 9.59.503.093.689-.217.689-.49 0-.242-.007-.874-.013-1.718-2.81.608-3.405-1.352-3.405-1.352-.46-1.167-1.123-1.477-1.123-1.477-.918-.626.068-.614.068-.614 1.011.075 1.55 1.042 1.55 1.042.9 1.545 2.364 1.098 2.941.838.093-.652.354-1.098.64-1.353-2.246-.254-4.604-1.122-4.604-4.993 0-1.105.391-2.004 1.042-2.711-.105-.255-.452-1.284.1-2.674 0 0 .85-.273 2.779 1.036a9.806 9.806 0 012.53-.341 9.843 9.843 0 012.532.341c1.929-1.309 2.779-1.036 2.779-1.036.552 1.39.205 2.42.1 2.674.644.707 1.035 1.606 1.035 2.71 0 3.884-2.363 4.734-4.615 4.988.36.31.688.93.688 1.874 0 1.352-.012 2.438-.012 2.773 0 .272.18.583.695.483 4.013-1.34 6.904-5.124 6.904-9.584C21.105 5.423 16.583.895 11 .895z"
-             fill="#191717"/>
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/" target="blank">
-          <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"
-           fill="#000"/>
-          </svg>
-        </a>
-      </div>
-    </footer>
+            <p class="carousel-cell__review">
+              Emmet (formerly Zen Coding) is a web-developer's toolkit that can
+              greatly improve your HTML & CSS workflow
+            </p>
+          </div>
+          <div class="carousel-cell">
+            <div class="carousel-cell__date">Дата</div>
+            <div class="carousel-cell__author">
+              <img
+                src="<%=require('./images/avatar.jpg')%>"
+                class="carousel-cell__photo"
+                alt="author"
+              />
+              <div class="carousel-cell__contacts">
+                <p class="carousel-cell__name">Антон Долинин</p>
+                <p class="carousel-cell__email">anton@yandex.ru</p>
+              </div>
+            </div>
+            <p class="carousel-cell__review">
+              Emmet (formerly Zen Coding) is a web-developer's toolkit that can
+              greatly improve your HTML & CSS workflow
+            </p>
+          </div>
+          <div class="carousel-cell">
+            <div class="carousel-cell__date">Дата</div>
+            <div class="carousel-cell__author">
+              <img
+                src="<%=require('./images/avatar.jpg')%>"
+                class="carousel-cell__photo"
+                alt="author"
+              />
+              <div class="carousel-cell__contacts">
+                <p class="carousel-cell__name">Антон Долинин</p>
+                <p class="carousel-cell__email">anton@yandex.ru</p>
+              </div>
+            </div>
+            <p class="carousel-cell__review">
+              Emmet (formerly Zen Coding) is a web-developer's toolkit that can
+              greatly improve your HTML & CSS workflow
+            </p>
+          </div>
+          <div class="carousel-cell">
+            <div class="carousel-cell__date">Дата</div>
+            <div class="carousel-cell__author">
+              <img
+                src="<%=require('./images/avatar.jpg')%>"
+                class="carousel-cell__photo"
+                alt="author"
+              />
+              <div class="carousel-cell__contacts">
+                <p class="carousel-cell__name">Антон Долинин</p>
+                <p class="carousel-cell__email">anton@yandex.ru</p>
+              </div>
+            </div>
+            <p class="carousel-cell__review">
+              Emmet (formerly Zen Coding) is a web-developer's toolkit that can
+              greatly improve your HTML & CSS workflow
+            </p>
+          </div>
+          <div class="carousel-cell">
+            <div class="carousel-cell__date">Дата</div>
+            <div class="carousel-cell__author">
+              <img
+                src="<%=require('./images/avatar.jpg')%>"
+                class="carousel-cell__photo"
+                alt="author"
+              />
+              <div class="carousel-cell__contacts">
+                <p class="carousel-cell__name">Антон Долинин</p>
+                <p class="carousel-cell__email">anton@yandex.ru</p>
+              </div>
+            </div>
+            <p class="carousel-cell__review">
+              Emmet (formerly Zen Coding) is a web-developer's toolkit that can
+              greatly improve your HTML & CSS workflow
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer__copyright">
+          <span class="big-mark">&reg;</span>2019 Supersite
+        </p>
+        <div class="footer__link footer__link">
+          <a href="#" class="link-property">Главная</a>
+          <a href="#" class="link-property">О проекте</a>
+          <a
+            href="https://praktikum.yandex.ru/profile/web-developer/"
+            class="link-property"
+            >Яндекс.Практикум</a
+          >
+        </div>
+        <div class="footer__logo-group">
+          <a href="https://github.com/Al5kon" target="blank">
+            <svg
+              width="22"
+              height="21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11 .895C5.417.895.895 5.423.895 11c0 4.466 2.897 8.25 6.91 9.59.503.093.689-.217.689-.49 0-.242-.007-.874-.013-1.718-2.81.608-3.405-1.352-3.405-1.352-.46-1.167-1.123-1.477-1.123-1.477-.918-.626.068-.614.068-.614 1.011.075 1.55 1.042 1.55 1.042.9 1.545 2.364 1.098 2.941.838.093-.652.354-1.098.64-1.353-2.246-.254-4.604-1.122-4.604-4.993 0-1.105.391-2.004 1.042-2.711-.105-.255-.452-1.284.1-2.674 0 0 .85-.273 2.779 1.036a9.806 9.806 0 012.53-.341 9.843 9.843 0 012.532.341c1.929-1.309 2.779-1.036 2.779-1.036.552 1.39.205 2.42.1 2.674.644.707 1.035 1.606 1.035 2.71 0 3.884-2.363 4.734-4.615 4.988.36.31.688.93.688 1.874 0 1.352-.012 2.438-.012 2.773 0 .272.18.583.695.483 4.013-1.34 6.904-5.124 6.904-9.584C21.105 5.423 16.583.895 11 .895z"
+                fill="#191717"
+              />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/" target="blank">
+            <svg
+              width="20"
+              height="20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"
+                fill="#000"
+              />
+            </svg>
+          </a>
+        </div>
+      </footer>
       <script src="<%= htmlWebpackPlugin.files.chunks.pageTwo.entry %>"></script>
       <!--<script src="../src/index.js"></script>-->
-  </div>
-</body>
+    </div>
+  </body>
 </html>

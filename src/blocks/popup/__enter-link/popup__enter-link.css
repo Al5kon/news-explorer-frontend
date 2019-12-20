@@ -1,0 +1,11 @@
+.popup__enter-link {
+  text-decoration: none;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: normal;
+  color: #2f71e5;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}

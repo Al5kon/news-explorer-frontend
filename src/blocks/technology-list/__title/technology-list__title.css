@@ -1,0 +1,12 @@
+.technology-list__title {
+  max-width: 350px;
+  font-family: "Robotoslab Regular";
+  font-size: 40px;
+  line-height: 46px;
+  font-style: normal;
+  font-weight: normal;
+  color: #1a1b22;
+  margin: 0;
+  padding-left: 104px;
+  text-align: left;
+}

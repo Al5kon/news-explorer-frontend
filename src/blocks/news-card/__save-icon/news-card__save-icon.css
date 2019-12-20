@@ -1,0 +1,12 @@
+.news-card__save-icon {
+  background-image: url(../../../images/savecard-nothover.svg);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+news-card__save-icon:hover news-card__note {
+  display: flex;
+}

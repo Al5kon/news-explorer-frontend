@@ -1,0 +1,33 @@
+.slider {
+  display: flex;
+  background: #f5f6f7;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.slider__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 110px;
+}
+.slider__header-title {
+  width: 712px;
+  font-family: "Robotoslab Regular";
+  font-size: 40px;
+  line-height: 46px;
+  font-style: normal;
+  font-weight: normal;
+  color: #1a1b22;
+}
+.slider__header-link {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+  color: #1a1b22;
+  text-decoration: none;
+}

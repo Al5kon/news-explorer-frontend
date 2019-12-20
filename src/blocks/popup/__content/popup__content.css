@@ -1,6 +1,5 @@
 .popup__content {
   width: 430px;
-  /*min-height: 330px;*/
   background-color: #fff;
   border-radius: 10px;
   position: relative;
@@ -12,13 +11,4 @@
   margin-bottom: 37%;
   width: 420px;
   padding: 44px 36px 24px 36px;
-}
-.popup__enter-link {
-  text-decoration: none;
-  font-family: 'Roboto Regular';
-  font-size: 18px;
-  line-height: 22px;
-  color: #2f71e5;
-  margin-top: 15px;
-  margin-bottom: 20px;
 }
