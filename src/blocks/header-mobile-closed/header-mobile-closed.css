@@ -1,0 +1,20 @@
+@import url(./__head/header-mobile-closed__head.css);
+@import url(./__logo/header-mobile-closed__logo.css);
+@import url(./__stripes/header-mobile-closed__stripes.css);
+
+.header-mobile-closed {
+  display: none;
+  flex-direction: column;
+}
+.header-mobile-closed_white-letters {
+  color: white;
+}
+.header-mobile-closed_black-letters {
+  color: #1a1b22;
+  background-color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .header-mobile-closed {
+    display: flex;
+  }
+}

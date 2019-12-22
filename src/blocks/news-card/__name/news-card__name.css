@@ -1,7 +1,7 @@
 .news-card__name {
   font-family: Robotoslab Regular;
-  font-size: 26px;
-  line-height: 30px;
+  font-size: calc(26px - (1440px - 100vw) / 168.25);
+  line-height: calc(30px - (1440px - 100vw) / 112.17);
   color: #1a1b22;
   font-weight: normal;
   font-style: normal;
@@ -9,4 +9,16 @@
   padding-right: 24px;
   margin-top: 12px;
   margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .news-card__name {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .news-card__name {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }

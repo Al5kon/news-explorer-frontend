@@ -1,0 +1,18 @@
+.header-mobile-open__button {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  width: 288px;
+  height: 56px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  align-self: center;
+  border: 1px solid #fff;
+}

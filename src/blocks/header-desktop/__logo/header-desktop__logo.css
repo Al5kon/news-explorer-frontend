@@ -1,13 +1,12 @@
-.header-logout__logo {
+.header-desktop__logo {
   color: white;
   font-family: "Robotoslab Regular";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 92px;
-  z-index: 10;
+  margin-left: calc(102px - (1440px - 100%) / 10.84);
 }
-.header-logout__logo_white {
+.header-desktop__logo_white {
   color: #1a1b22;
 }

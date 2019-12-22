@@ -1,12 +1,26 @@
 .technology-list__title {
   max-width: 350px;
   font-family: "Robotoslab Regular";
-  font-size: 40px;
-  line-height: 46px;
+  font-size: calc(40px - (1440px - 100vw) / 67.3);
+  line-height: calc(46px - (1440px - 100vw) / 56.08);
   font-style: normal;
   font-weight: normal;
   color: #1a1b22;
   margin: 0;
-  padding-left: 104px;
+  padding-left: calc(104px - (1440px - 100vw) / 10.52);
   text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .technology-list__title {
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: calc(40px - (767px - 100vw) / 18.63);
+  }
+}
+@media screen and (max-width: 320px) {
+  .technology-list__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 16px;
+  }
 }

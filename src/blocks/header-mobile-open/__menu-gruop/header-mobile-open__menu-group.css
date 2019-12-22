@@ -1,0 +1,10 @@
+@import url(../__menu/header-mobile-open__menu.css);
+@import url(../__button/header-mobile-open__button.css);
+
+.header-mobile-open__menu-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 15px;
+}

@@ -9,5 +9,5 @@
   background-color: #f5f6f7;
 }
 .result-of-search_kill {
-  display: none;
+  display: flex;
 }

@@ -11,3 +11,10 @@
 .big-mark {
   font-size: 26px;
 }
+@media screen and (max-width: 767px) {
+  .footer__copyright {
+    order: 3;
+    align-self: flex-start;
+    padding-left: 24px;
+  }
+}

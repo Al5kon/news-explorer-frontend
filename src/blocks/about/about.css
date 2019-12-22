@@ -13,5 +13,21 @@
   margin-left: 98px;
 }
 .about__paragraph-position {
-  margin: 97px auto auto 67px;
+  margin: 97px 67px auto 67px;
+}
+@media screen and (max-width: 767px) {
+  .about {
+    display: block;
+  }
+  .about__avatar-position {
+    margin-left: calc(98px - (767px - 100vw) / 6.04);
+  }
+  .about__paragraph-position {
+    margin-left: 24px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .about__avatar-position {
+    margin-left: 24px;
+  }
 }

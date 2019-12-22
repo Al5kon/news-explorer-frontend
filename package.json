@@ -4,8 +4,9 @@
   "description": "HTML, CSS, JS, GIT, WEBPACK",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && webpack --mode production",
-    "dev": "webpack-dev-server --mode development --open"
+    "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -39,7 +40,8 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.8.1",
-    "webpack-md5-hash": "0.0.6"
+    "webpack-md5-hash": "0.0.6",
+    "cross-env": "^6.0.3"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",

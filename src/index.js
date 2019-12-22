@@ -1,4 +1,2 @@
-import './pages/style.css';
-
-let a = 5;
-console.log(a);
+/* eslint-disable quotes */
+import "./pages/style.css";

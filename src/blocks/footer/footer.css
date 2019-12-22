@@ -3,9 +3,14 @@
 @import url(./__logo-group/footer__logo-group.css);
 
 .footer {
-    display: flex;
-    background-color: #fff;
-    padding-top: 20px;
-    justify-content: space-between;
-    padding-bottom: 10px;
+  display: flex;
+  background-color: #fff;
+  padding-top: 20px;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-wrap: wrap;
+  }
 }

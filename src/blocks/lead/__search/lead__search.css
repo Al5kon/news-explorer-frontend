@@ -2,14 +2,14 @@
   display: flex;
   justify-content: flex-end;
   margin: 65px auto 80px;
-  width: 600px;
-  height: 60px;
+  width: calc(600px - (1440px - 100vw) / 3.36);
+  height: calc(60px - (1440px - 100vw) / 168);
   background-color: white;
   border-radius: 100px 100px 100px 100px;
 }
 .lead__submit {
   background-color: #2f71e5;
-  width: 235px;
+  width: calc(235px - (1440px - 100vw) / 8.96);
   border-radius: 100px 100px 100px 100px;
   border: 0;
   padding: 0;
@@ -46,4 +46,9 @@
   font-weight: normal;
   line-height: 22px;
   outline: none;
+}
+@media screen and (max-width: 320px) {
+  .lead__search {
+    display: none;
+  }
 }

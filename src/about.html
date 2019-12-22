@@ -8,39 +8,102 @@
     <meta name="keywords" content="Новости, что нового" />
     <meta name="author" content="Алексей Коньков" />
     <title>NewsExplorer</title>
-    <!--<link rel="icon" href="<%=require('../src/images/favicon.ico') %>">-->
+    <link rel="icon" href="<%=require('./favicon.ico') %>" />
     <link
       rel="stylesheet"
       href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
     />
-    <!--<link rel="stylesheet" href="../src/pages/style.css">-->
   </head>
   <body>
     <div class="page">
-      <header class="header-logout header-logout_white">
+      <header class="header-desktop header-desktop_white">
+        <h3 class="header-desktop__logo header-desktop__logo_white">
+          NewsExplorer
+        </h3>
         <div class="header-wrapper">
-          <h3 class="header-logout__logo header-logout__logo_white">
-            NewsExplorer
-          </h3>
-        </div>
-        <div class="header-wrapper">
-          <a href="#" class="header-logout__menu header-logout_grey-letters"
+          <a href="index.html" class="header-desktop__menu header-desktop_grey-letters"
             >Главная</a
           >
           <a
             href="#"
-            class="header-logout__menu header-logout__bottom-line header-logout_black-letters"
+            class="header-desktop__menu header-desktop__bottom-line header-desktop_black-letters"
             >О проекте</a
           >
-          <a href="#" class="header-logout__menu header-logout_grey-letters"
+          <a
+            href="saved-news.html"
+            class="header-desktop__menu header-desktop_grey-letters header-desktop_kill"
             >Сохранённые статьи</a
           >
           <button
             type="submit"
-            class="header-logout__button header-logout_black-letters"
+            class="header-desktop__button header-desktop_black-letters"
           >
             Авторизоваться
           </button>
+        </div>
+      </header>
+      <header class="header-mobile-closed header-mobile-closed_black-letters">
+        <div class="header-mobile-closed__head">
+          <h3 class="header-mobile-closed__logo">NewsExplorer</h3>
+          <div class="header-mobile-closed__stripes">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path fill="#1a1b22" d="M4 8h16v2H4zM4 14h16v2H4z" />
+            </svg>
+          </div>
+        </div>
+      </header>
+      <header class="header-mobile-open">
+        <div class="header-mobile-open__head">
+          <h3 class="header-mobile-open__logo">
+            NewsExplorer
+          </h3>
+          <div class="header-mobile-open__crest">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.414 12l5.293 5.293-1.414 1.414-6-6a1 1 0 010-1.414l6-6 1.414 1.414L13.414 12z"
+                fill="#fff"
+              />
+              <path
+                d="M10.879 12l-5.293 5.293L7 18.707l6-6a1 1 0 000-1.414l-6-6-1.414 1.414L10.879 12z"
+                fill="#fff"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="header-mobile-open__wrapper">
+          <div class="header-mobile-open__menu-group">
+            <a
+              href="index.html"
+              class="header-mobile-open__menu header-mobile-open_white-letters"
+              >Главная</a
+            >
+            <a
+              href="#"
+              class="header-mobile-open__menu header-mobile-open_grey-letters"
+              >О проекте</a
+            >
+            <a
+              href="saved-news.html"
+              class="header-mobile-open__menu header-mobile-open_kill header-mobile-open_grey-letters"
+              >Сохранённые статьи</a
+            >
+            <button
+              type="submit"
+              class="header-mobile-open__button header-mobile-open_white-letters"
+            >
+              Авторизоваться
+            </button>
+          </div>
         </div>
       </header>
       <section class="text">
@@ -268,14 +331,138 @@
             </p>
           </div>
         </div>
+        <button type="button" class="slider__button">
+          Открыть в GitHub
+        </button>
       </section>
+      <div class="popup">
+        <div class="popup__content">
+          <svg
+            width="34"
+            height="34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="popup__close"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M31.113 0l2.121 2.121-14.496 14.496 14.496 14.496-2.121 2.121-14.496-14.496L2.121 33.234 0 31.113l14.496-14.496L0 2.12 2.121 0l14.496 14.496L31.113 0z"
+              fill="#fff"
+            />
+          </svg>
+          <h3 class="popup__title">Регистрация</h3>
+          <form class="popup__form">
+            <p class="popup__field-name">Email</p>
+            <input
+              type="email"
+              required
+              autocomplete="off"
+              class="popup__input popup__input_type_name"
+              placeholder="Введите почту"
+            />
+            <span id="error-email-logout"></span>
+            <p class="popup__field-name">Пароль</p>
+            <input
+              type="password"
+              required
+              autocomplete="off"
+              class="popup__input popup__input_type_link-url"
+              placeholder="Введите пароль"
+            />
+            <span id="error-password-logout"></span>
+            <p class="popup__field-name">Имя</p>
+            <input
+              type="text"
+              minlength="2"
+              maxlength="30"
+              required
+              autocomplete="off"
+              class="popup__input popup__input_type_name"
+              placeholder="Введите свое имя"
+            />
+            <span id="error-name"></span>
+            <button type="submit" class="popup__button">
+              Зарегистрироваться
+            </button>
+            <p class="popup__enter-alternative">
+              или <a href="" class="popup__link">Войти</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="popup">
+        <div class="popup__content">
+          <svg
+            width="34"
+            height="34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="popup__close"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M31.113 0l2.121 2.121-14.496 14.496 14.496 14.496-2.121 2.121-14.496-14.496L2.121 33.234 0 31.113l14.496-14.496L0 2.12 2.121 0l14.496 14.496L31.113 0z"
+              fill="#fff"
+            />
+          </svg>
+          <h3 class="popup__title">Вход</h3>
+          <form class="popup__form">
+            <p class="popup__field-name">Email</p>
+            <input
+              type="email"
+              required
+              autocomplete="off"
+              class="popup__input popup__input_type_name"
+              placeholder="Введите почту"
+            />
+            <span id="error-email-login"></span>
+            <p class="popup__field-name">Пароль</p>
+            <input
+              type="password"
+              required
+              autocomplete="off"
+              class="popup__input popup__input_type_link-url"
+              placeholder="Введите пароль"
+            />
+            <span id="error-password-login"></span>
+            <button type="submit" class="popup__button">Войти</button>
+            <p class="popup__enter-alternative">
+              или <a href="" class="popup__link">Зарегистрироваться</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="popup">
+        <div class="popup__content popup__content_resume">
+          <h3 class="popup__title">Пользователь успешно зарегистрирован</h3>
+          <p class="popup__enter-link">
+            <a href="" class="popup__enter-link">Выполнить вход</a>
+          </p>
+          <svg
+            width="34"
+            height="34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="popup__close"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M31.113 0l2.121 2.121-14.496 14.496 14.496 14.496-2.121 2.121-14.496-14.496L2.121 33.234 0 31.113l14.496-14.496L0 2.12 2.121 0l14.496 14.496L31.113 0z"
+              fill="#fff"
+            />
+          </svg>
+        </div>
+      </div>
       <footer class="footer">
         <p class="footer__copyright">
           <span class="big-mark">&reg;</span>2019 Supersite
         </p>
         <div class="footer__link footer__link">
-          <a href="#" class="link-property">Главная</a>
-          <a href="#" class="link-property">О проекте</a>
+          <a href="index.html" class="link-property">Главная</a>
+          <a href="about.html" class="link-property">О проекте</a>
           <a
             href="https://praktikum.yandex.ru/profile/web-developer/"
             class="link-property"
@@ -314,7 +501,6 @@
         </div>
       </footer>
       <script src="<%= htmlWebpackPlugin.files.chunks.pageTwo.entry %>"></script>
-      <!--<script src="../src/index.js"></script>-->
     </div>
   </body>
 </html>

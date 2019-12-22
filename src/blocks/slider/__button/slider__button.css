@@ -1,0 +1,25 @@
+.slider__button {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .slider__button {
+    display: inline-block;
+    font-family: "Roboto Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    width: 288px;
+    height: 56px;
+    border-radius: 80px;
+    box-sizing: border-box;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    cursor: pointer;
+    align-self: center;
+    border: 1px solid #1a1b22;
+    text-align: center;
+  }
+}

@@ -1,3 +1,17 @@
 .about__avatar {
-    border-radius: 230px;
+  width: calc(464px - (1440px - 100vw) / 2.897);
+  height: calc(464px - (1440px - 100vw) / 2.897);
+  border-radius: 1000px;
+}
+@media screen and (max-width: 768px) {
+  .about__avatar {
+    width: 232px;
+    height: 232px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .about__avatar {
+    width: 272px;
+    height: 272px;
+  }
 }

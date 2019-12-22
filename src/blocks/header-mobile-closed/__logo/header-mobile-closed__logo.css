@@ -1,0 +1,8 @@
+.header-mobile-closed__logo {
+  font-family: "Robotoslab Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: calc(40px - (767px - 100%) / 18.67);
+}
