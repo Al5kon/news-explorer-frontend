@@ -2,7 +2,7 @@
 
 Diploma.Frontend
 
-## demo version: https://github.com/Al5kon.github.io/news-explorer-frontend
+## demo version: https://github.com/Al5kon.github.io/news-explorer-frontend/
 
 ## Instruction: use "npm" to install it
 
@@ -21,3 +21,5 @@ Diploma.Frontend
 ### v0.0.6 Add third page
 
 ### v0.0.7 Fix bugs
+
+### v0.0.8 Change README.md
