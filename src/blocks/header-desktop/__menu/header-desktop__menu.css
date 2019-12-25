@@ -1,10 +1,10 @@
 .header-desktop__menu {
   font-family: "Roboto Regular";
+  color: #b6bcbf;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  /*z-index: 10;*/
   height: 100%;
   margin-bottom: 0;
   padding-bottom: 28px;
@@ -15,9 +15,7 @@
 .header-desktop__menu_white-letters {
   color: white;
 }
-.header-desktop__menu_grey-letters {
-  color: #b6bcbf;
-}
+
 .header-desktop__menu_black-letters {
   color: #1a1b22;
 }

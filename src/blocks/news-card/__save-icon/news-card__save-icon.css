@@ -1,5 +1,4 @@
 .news-card__save-icon {
-  /*background-image: url(../../../images/savecard-nothover.svg);*/
   width: 40px;
   height: 40px;
   position: absolute;
@@ -7,6 +6,9 @@
   right: 24px;
   cursor: pointer;
 }
-news-card__save-icon:hover news-card__note {
+.news-card__save-icon:hover .news-card__note-text {
   display: flex;
+}
+.news-card__save-icon:hover path {
+  stroke: #1a1b22;
 }

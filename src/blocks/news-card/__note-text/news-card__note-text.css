@@ -1,3 +1,5 @@
+@import url(../__save-icon/news-card__save-icon.css);
+
 .news-card__note-text {
   font-family: "Roboto Medium";
   font-size: 10px;
@@ -5,4 +7,16 @@
   font-weight: 500;
   font-style: normal;
   color: black;
+  width: 182px;
+  height: 40px;
+  position: absolute;
+  top: 24px;
+  right: 69px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  /*justify-content: center;
+  align-items: center;*/
+  margin-top: 0;
+  z-index: 100;
 }

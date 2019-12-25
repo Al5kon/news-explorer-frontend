@@ -1,0 +1,15 @@
+.news-card__trash {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.news-card__trash:hover path {
+  stroke: #1a1b22;
+}
+.news-card__trash:hover .news-card__note-text {
+  display: flex;
+}

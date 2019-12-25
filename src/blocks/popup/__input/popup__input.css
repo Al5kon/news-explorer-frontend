@@ -15,6 +15,7 @@
 .popup__input:focus {
   outline: none;
   border-bottom: 1px solid rgba(0, 0, 0);
+  background-color: transparent;
 }
 
 .popup__input:last-of-type {

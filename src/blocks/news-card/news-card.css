@@ -4,8 +4,8 @@
 @import url(./__date/news-card__date.css);
 @import url(./__source/news-card__source.css);
 @import url(./__save-icon/news-card__save-icon.css);
-@import url(./__note/news-card__note.css);
 @import url(./__note-text/news-card__note-text.css);
+@import url(./__trash/news-card__trash.css);
 
 .news-card {
   background-color: #fff;
