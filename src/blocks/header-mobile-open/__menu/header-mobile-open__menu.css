@@ -7,3 +7,13 @@
   color: #fff;
   text-decoration: none;
 }
+.header-mobile-open__menu_white-letters {
+  color: white;
+}
+.header-mobile-open__menu_grey-letters {
+  color: #b6bcbf;
+}
+.header-mobile-open__menu_black-letters {
+  color: #1a1b22;
+  background-color: #fff;
+}

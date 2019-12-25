@@ -6,6 +6,25 @@
   font-size: calc(60px - (1440px - 100vw) / 28);
   line-height: calc(64px - (1440px - 100vw) / 28);
   width: calc(600px - (1440px - 100vw) / 3.36);
-  margin-left: auto;
-  margin-right: auto;
+}
+.lead__title_position {
+  margin: calc(80px - (1440px - 100vw) / 16.02) auto 0;
+}
+@media screen and (max-width: 767px) {
+  .lead__title {
+    font-size: 36px;
+    line-height: 40px;
+    width: calc(385px - (767px - 100vw) / 4.47);
+  }
+  .lead__title_position {
+    margin: calc(38px - (767px - 100vw) / 55.88) auto 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .lead__title {
+    width: 285px;
+  }
+  .lead__title_position {
+    margin: 30px auto 0;
+  }
 }

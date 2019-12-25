@@ -6,13 +6,11 @@
   display: none;
   flex-direction: column;
 }
-.header-mobile-closed_white-letters {
-  color: white;
-}
-.header-mobile-closed_black-letters {
-  color: #1a1b22;
+
+.header-mobile-closed_white {
   background-color: #fff;
 }
+
 @media screen and (max-width: 767px) {
   .header-mobile-closed {
     display: flex;

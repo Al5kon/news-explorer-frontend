@@ -13,13 +13,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
-.header-mobile-open_white-letters {
-  color: white;
-}
-.header-mobile-open_black-letters {
-  color: #1a1b22;
-  background-color: #fff;
-}
 @media screen and (max-width: 767px) {
   .header-mobile-open {
     display: none;

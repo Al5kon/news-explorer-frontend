@@ -17,34 +17,40 @@
   <body>
     <div class="page">
       <header class="header-desktop header-desktop_white">
-        <h3 class="header-desktop__logo header-desktop__logo_white">
+        <h3 class="header-desktop__logo header-desktop__logo_black">
           NewsExplorer
         </h3>
         <div class="header-wrapper">
-          <a href="index.html" class="header-desktop__menu header-desktop_grey-letters"
+          <a
+            href="index.html"
+            class="header-desktop__menu header-desktop__menu_grey-letters"
             >Главная</a
           >
           <a
             href="#"
-            class="header-desktop__menu header-desktop__bottom-line header-desktop_black-letters"
+            class="header-desktop__menu header-desktop__menu_black-line header-desktop__menu_black-letters"
             >О проекте</a
           >
           <a
             href="saved-news.html"
-            class="header-desktop__menu header-desktop_grey-letters header-desktop_kill"
+            class="header-desktop__menu header-desktop__menu_grey-letters header-desktop__menu_kill"
             >Сохранённые статьи</a
           >
           <button
             type="submit"
-            class="header-desktop__button header-desktop_black-letters"
+            class="header-desktop__button header-desktop__button_black"
           >
             Авторизоваться
           </button>
         </div>
       </header>
-      <header class="header-mobile-closed header-mobile-closed_black-letters">
+      <header class="header-mobile-closed header-mobile-closed_white">
         <div class="header-mobile-closed__head">
-          <h3 class="header-mobile-closed__logo">NewsExplorer</h3>
+          <h3
+            class="header-mobile-closed__logo header-mobile-closed__logo_black-letters"
+          >
+            NewsExplorer
+          </h3>
           <div class="header-mobile-closed__stripes">
             <svg
               width="24"
@@ -84,22 +90,22 @@
           <div class="header-mobile-open__menu-group">
             <a
               href="index.html"
-              class="header-mobile-open__menu header-mobile-open_white-letters"
+              class="header-mobile-open__menu header-mobile-open__menu_grey-letters"
               >Главная</a
             >
             <a
               href="#"
-              class="header-mobile-open__menu header-mobile-open_grey-letters"
+              class="header-mobile-open__menu header-mobile-open__menu_white-letters"
               >О проекте</a
             >
             <a
               href="saved-news.html"
-              class="header-mobile-open__menu header-mobile-open_kill header-mobile-open_grey-letters"
+              class="header-mobile-open__menu header-mobile-open__menu_kill header-mobile-open__menu_grey-letters"
               >Сохранённые статьи</a
             >
             <button
               type="submit"
-              class="header-mobile-open__button header-mobile-open_white-letters"
+              class="header-mobile-open__button header-mobile-open__button_white"
             >
               Авторизоваться
             </button>
@@ -112,23 +118,31 @@
           <p class="text__main">
             Этот сайт &ndash; дипломный проект студента Яндекс.Практикума. Его
             цель &ndash; показать, чему научился студент, какими технологиями
-            владеет.<br /><br />
+            владеет.
+          </p>
+          <p class="text__main">
             Верстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и
             масштабируемым. Кроме того, добавлять новые страницы и
             функциональность проще и быстрее, чем в проектах, выполненных по
-            другим методологиям. Также сайт проще и дешевле поддерживать.<br /><br />
+            другим методологиям. Также сайт проще и дешевле поддерживать.
+          </p>
+          <p class="text__main">
             Студент самостоятельно написал серверный код. В нем реализована
             функциональность регистрации и входа в систему. Сайт позволяет
             искать новости за прошедшую неделю и сохранять понравившиеся в
             личном кабинете. На сервере избранные новости хранятся в базе данных
             Mongo DB. Студент запрограммировал надежный сервер: отказоустойчивый
-            и безопасный.<br /><br />
+            и безопасный.
+          </p>
+          <p class="text__main">
             При создании проекта была использована сборка технологией Webpack.
             Это современный подход к разработке сайтов. Код оптимизируется, а
             значит, сайт работает быстрее. Также сайт работает в старых
             браузерах. Даже если посетители &ndash; пользователи старых
             операционных систем, у них не будет проблем с отображением. А
-            значит, потенциальная аудитория возрастает.<br /><br />
+            значит, потенциальная аудитория возрастает.
+          </p>
+          <p class="text__main">
             Проект был проверен экспертами Яндекс.Практикума. Если вашему
             бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.
           </p>
@@ -218,9 +232,9 @@
         <img
           src="<%=require('./images/imageauthor.jpg')%>"
           alt="Фото автора"
-          class="about__avatar about__avatar-position"
+          class="about__avatar about__avatar_position"
         />
-        <div class="about__paragraph about__paragraph-position">
+        <div class="about__paragraph about__paragraph_position">
           <h3 class="about__title">Об авторе</h3>
           <p class="about__description">
             Это блок с описанием автора проекта. Здесь следует указать как вас
@@ -358,7 +372,7 @@
               type="email"
               required
               autocomplete="off"
-              class="popup__input popup__input_type_name"
+              class="popup__input"
               placeholder="Введите почту"
             />
             <span id="error-email-logout"></span>
@@ -367,7 +381,7 @@
               type="password"
               required
               autocomplete="off"
-              class="popup__input popup__input_type_link-url"
+              class="popup__input"
               placeholder="Введите пароль"
             />
             <span id="error-password-logout"></span>
@@ -378,7 +392,7 @@
               maxlength="30"
               required
               autocomplete="off"
-              class="popup__input popup__input_type_name"
+              class="popup__input"
               placeholder="Введите свое имя"
             />
             <span id="error-name"></span>
@@ -414,7 +428,7 @@
               type="email"
               required
               autocomplete="off"
-              class="popup__input popup__input_type_name"
+              class="popup__input"
               placeholder="Введите почту"
             />
             <span id="error-email-login"></span>
@@ -423,7 +437,7 @@
               type="password"
               required
               autocomplete="off"
-              class="popup__input popup__input_type_link-url"
+              class="popup__input"
               placeholder="Введите пароль"
             />
             <span id="error-password-login"></span>
@@ -460,7 +474,7 @@
         <p class="footer__copyright">
           <span class="big-mark">&reg;</span>2019 Supersite
         </p>
-        <div class="footer__link footer__link">
+        <div class="footer__link">
           <a href="index.html" class="link-property">Главная</a>
           <a href="about.html" class="link-property">О проекте</a>
           <a

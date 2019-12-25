@@ -10,4 +10,10 @@
   font-weight: 500;
   font-style: normal;
   margin: 0 auto 80px auto;
+  outline: none;
+  opacity: 1;
+  cursor: pointer;
+}
+.result-of-search__button:hover {
+  opacity: 0.5;
 }

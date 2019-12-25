@@ -15,4 +15,8 @@
   cursor: pointer;
   align-self: center;
   border: 1px solid #fff;
+  outline: none;
+}
+.header-mobile-open__button_white {
+  color: #fff;
 }

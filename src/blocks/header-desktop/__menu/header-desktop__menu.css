@@ -4,11 +4,29 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  z-index: 10;
+  /*z-index: 10;*/
   height: 100%;
   margin-bottom: 0;
   padding-bottom: 28px;
   padding-top: 20px;
   text-decoration: none;
   margin-right: 45px;
+}
+.header-desktop__menu_white-letters {
+  color: white;
+}
+.header-desktop__menu_grey-letters {
+  color: #b6bcbf;
+}
+.header-desktop__menu_black-letters {
+  color: #1a1b22;
+}
+.header-desktop__menu_white-line {
+  box-shadow: inset 0 -3px 0 rgba(255, 255, 255, 1);
+}
+.header-desktop__menu_black-line {
+  box-shadow: inset 0 -3px 0 #1a1b22;
+}
+.header-desktop__menu_kill {
+  display: flex;
 }

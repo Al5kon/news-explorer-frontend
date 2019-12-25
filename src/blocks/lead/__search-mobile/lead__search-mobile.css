@@ -8,8 +8,6 @@
   width: 288px;
   height: 56px;
   border-radius: 100px 100px 100px 100px;
-  /*border: 0;
-  padding: 0;*/
   font-family: Roboto Regular;
   font-weight: 500;
   font-style: normal;
@@ -37,7 +35,7 @@
 .lead__search-place-mobile {
   width: 288px;
   height: 56px;
-  /*border: none;*/
+  border: none;
   font-family: Roboto Regular;
   font-size: 16px;
   font-style: normal;

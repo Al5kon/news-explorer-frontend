@@ -1,4 +1,14 @@
 .text__wrapper {
   max-width: 815px;
-  padding-left: 104px;
+  padding-left: calc(104px - (1440px - 100vw) / 10.52);
+}
+@media screen and (max-width: 767px) {
+  .text__wrapper {
+    padding-left: calc(40px - (767px - 100vw) / 18.63);
+  }
+}
+@media screen and (max-width: 320px) {
+  .text__wrapper {
+    padding-left: 16px;
+  }
 }

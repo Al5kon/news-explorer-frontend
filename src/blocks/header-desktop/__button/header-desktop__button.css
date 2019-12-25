@@ -12,4 +12,11 @@
   margin-top: 10px;
   margin-right: 20px;
   cursor: pointer;
+  outline: none;
+}
+.header-desktop__button_white {
+  color: white;
+}
+.header-desktop__button_black {
+  color: #1a1b22;
 }

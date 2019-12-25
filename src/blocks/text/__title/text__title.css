@@ -5,6 +5,17 @@
   font-style: normal;
   font-weight: normal;
   color: #1a1b22;
-  padding-left: 104px;
+  padding-top: 5px;
+  padding-left: calc(104px - (1440px - 100vw) / 10.52);
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .text__title {
+    padding-left: calc(40px - (767px - 100vw) / 18.63);
+  }
+}
+@media screen and (max-width: 320px) {
+  .text__title {
+    padding-left: 16px;
+  }
 }

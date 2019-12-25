@@ -18,21 +18,6 @@
   display: flex;
   margin-right: calc(83px - (1440px - 100%) / 15.63);
 }
-.header-desktop_kill {
-  display: flex;
-}
-.header-desktop__bottom-line {
-  box-shadow: inset 0 -3px 0 rgba(255, 255, 255, 1);
-}
-.header-desktop_white-letters {
-  color: white;
-}
-.header-desktop_grey-letters {
-  color: #b6bcbf;
-}
-.header-desktop_black-letters {
-  color: #1a1b22;
-}
 
 @media screen and (max-width: 767px) {
   .header-desktop {

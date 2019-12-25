@@ -1,20 +1,12 @@
 .about__paragraph {
   width: auto;
 }
-.about__title {
-  font-family: Robotoslab Regular;
-  font-size: 40px;
-  line-height: 46px;
-  font-style: normal;
-  font-weight: normal;
-  color: 1a1b22;
-  margin-bottom: 25px;
+.about__paragraph_position {
+  margin: 97px 67px auto 67px;
 }
-.about__description {
-  font-family: Roboto Regular;
-  font-size: 18px;
-  line-height: 24px;
-  font-style: normal;
-  font-weight: normal;
-  color: 1a1b22;
+
+@media screen and (max-width: 768px) {
+  .about__paragraph_position {
+    margin-left: 24px;
+  }
 }

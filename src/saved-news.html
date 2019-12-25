@@ -17,36 +17,40 @@
   <body>
     <div class="page">
       <header class="header-desktop header-desktop_white">
-        <h3 class="header-desktop__logo header-desktop__logo_white">
+        <h3 class="header-desktop__logo header-desktop__logo_black">
           NewsExplorer
         </h3>
         <div class="header-wrapper">
           <a
             href="index.html"
-            class="header-desktop__menu header-desktop__bottom-line header-desktop_black-letters"
+            class="header-desktop__menu header-desktop__menu_grey-letters"
             >Главная</a
           >
           <a
             href="about.html"
-            class="header-desktop__menu header-desktop_grey-letters"
+            class="header-desktop__menu header-desktop__menu_grey-letters"
             >О проекте</a
           >
           <a
             href="#"
-            class="header-desktop__menu header-desktop_grey-letters"
+            class="header-desktop__menu  header-desktop__menu_black-line header-desktop__menu_black-letters"
             >Сохранённые статьи</a
           >
           <button
             type="submit"
-            class="header-desktop__button header-desktop_black-letters"
+            class="header-desktop__button header-desktop__button_black"
           >
             Авторизоваться
           </button>
         </div>
       </header>
-      <header class="header-mobile-closed header-mobile-closed_black-letters">
+      <header class="header-mobile-closed header-mobile-closed_white">
         <div class="header-mobile-closed__head">
-          <h3 class="header-mobile-closed__logo">NewsExplorer</h3>
+          <h3
+            class="header-mobile-closed__logo header-mobile-closed__logo_black-letters"
+          >
+            NewsExplorer
+          </h3>
           <div class="header-mobile-closed__stripes">
             <svg
               width="24"
@@ -84,22 +88,22 @@
           <div class="header-mobile-open__menu-group">
             <a
               href="saved-news.html"
-              class="header-mobile-open__menu header-mobile-open_white-letters"
+              class="header-mobile-open__menu header-mobile-open__menu_grey-letters"
               >Главная</a
             >
             <a
               href="about.html"
-              class="header-mobile-open__menu header-mobile-open_grey-letters"
+              class="header-mobile-open__menu header-mobile-open__menu_grey-letters"
               >О проекте</a
             >
             <a
               href="saved-news.html"
-              class="header-mobile-open__menu header-mobile-open_kill header-mobile-open_grey-letters"
+              class="header-mobile-open__menu header-mobile-open__menu_white-letters"
               >Сохранённые статьи</a
             >
             <button
               type="submit"
-              class="header-mobile-open__button header-mobile-open_white-letters"
+              class="header-mobile-open__button header-mobile-open__button_white"
             >
               Авторизоваться
             </button>
@@ -329,7 +333,7 @@
               type="email"
               required
               autocomplete="off"
-              class="popup__input popup__input_type_name"
+              class="popup__input"
               placeholder="Введите почту"
             />
             <span id="error-email-logout"></span>
@@ -338,7 +342,7 @@
               type="password"
               required
               autocomplete="off"
-              class="popup__input popup__input_type_link-url"
+              class="popup__input"
               placeholder="Введите пароль"
             />
             <span id="error-password-logout"></span>
@@ -349,7 +353,7 @@
               maxlength="30"
               required
               autocomplete="off"
-              class="popup__input popup__input_type_name"
+              class="popup__input"
               placeholder="Введите свое имя"
             />
             <span id="error-name"></span>
@@ -385,7 +389,7 @@
               type="email"
               required
               autocomplete="off"
-              class="popup__input popup__input_type_name"
+              class="popup__input"
               placeholder="Введите почту"
             />
             <span id="error-email-login"></span>
@@ -394,7 +398,7 @@
               type="password"
               required
               autocomplete="off"
-              class="popup__input popup__input_type_link-url"
+              class="popup__input"
               placeholder="Введите пароль"
             />
             <span id="error-password-login"></span>
@@ -431,7 +435,7 @@
         <p class="footer__copyright">
           <span class="big-mark">&reg;</span>2019 Supersite
         </p>
-        <div class="footer__link footer__link">
+        <div class="footer__link">
           <a href="index.html" class="link-property">Главная</a>
           <a href="about.html" class="link-property">О проекте</a>
           <a

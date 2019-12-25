@@ -5,7 +5,21 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  width: calc(600px - (1440px - 100vw) / 3.36);
-  margin-left: auto;
-  margin-right: auto;
+  width: calc(545px - (1440px - 100vw) / 7.24);
+}
+.lead__subtitle_position {
+  margin: calc(32px - (1440px - 100vw) / 42.06) auto 0;
+}
+@media screen and (max-width: 767px) {
+  .lead__subtitle_position {
+    margin: 16px auto 0;
+  }
+  .lead__subtitle {
+    width: calc(452px - (767px - 100vw) / 2.73);
+  }
+}
+@media screen and (max-width: 320px) {
+  .lead__subtitle {
+    width: 285px;
+  }
 }

@@ -10,25 +10,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.lead__title-position {
-  margin: calc(80px - (1440px - 100vw) / 16.02) auto 0;
-}
-.lead__subtitle-position {
-  margin: calc(32px - (1440px - 100vw) / 42.06) auto 0;
-}
-@media screen and (max-width: 767px) {
-  .lead__title-position {
-    margin: calc(38px - (767px - 100vw) / 55.88) auto 0;
-  }
-  .lead__subtitle-position {
-    margin: 16px auto 0;
-  }
-}
+
 @media screen and (max-width: 320px) {
   .lead {
     height: 536px;
-  }
-  .lead__title-position {
-    margin: 30px auto 0;
   }
 }
