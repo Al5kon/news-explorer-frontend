@@ -1,0 +1,15 @@
+.lead__search-place-mobile {
+  width: 288px;
+  height: 56px;
+  border: none;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  outline: none;
+  border-radius: 100px 100px 100px 100px;
+  background-color: #fff;
+  margin: 57px auto 16px auto;
+  text-align: center;
+}

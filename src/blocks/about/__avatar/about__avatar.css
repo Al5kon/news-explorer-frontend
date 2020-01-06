@@ -1,11 +1,9 @@
+@import url(../__avatar/_position/about__avatar_position.css);
+
 .about__avatar {
   width: calc(464px - (1440px - 100vw) / 2.897);
   height: calc(464px - (1440px - 100vw) / 2.897);
   border-radius: 1000px;
-}
-.about__avatar_position {
-  margin-top: 82px;
-  margin-left: 98px;
 }
 
 @media screen and (max-width: 768px) {
@@ -13,17 +11,11 @@
     width: 232px;
     height: 232px;
   }
-  .about__avatar_position {
-    margin-left: calc(98px - (767px - 100vw) / 6.04);
-  }
 }
 
 @media screen and (max-width: 320px) {
   .about__avatar {
     width: 272px;
     height: 272px;
-  }
-  .about__avatar_position {
-    margin-left: 24px;
   }
 }

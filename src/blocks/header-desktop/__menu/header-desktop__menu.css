@@ -1,3 +1,11 @@
+@import url(./_white-letters/header-desktop__menu_white-letters.css);
+@import url(./_white-hover/header-desktop__menu_white-hover.css);
+@import url(./_black-letters/header-desktop__menu_black-letters.css);
+@import url(./_black-hover/header-desktop__menu_black-hover.css);
+@import url(./_white-line/header-desktop__menu_white-line.css);
+@import url(./_black-line/header-desktop__menu_black-line.css);
+@import url(./_kill/header-desktop__menu_kill.css);
+
 .header-desktop__menu {
   font-family: "Roboto Regular";
   color: #b6bcbf;
@@ -11,20 +19,4 @@
   padding-top: 20px;
   text-decoration: none;
   margin-right: 45px;
-}
-.header-desktop__menu_white-letters {
-  color: white;
-}
-
-.header-desktop__menu_black-letters {
-  color: #1a1b22;
-}
-.header-desktop__menu_white-line {
-  box-shadow: inset 0 -3px 0 rgba(255, 255, 255, 1);
-}
-.header-desktop__menu_black-line {
-  box-shadow: inset 0 -3px 0 #1a1b22;
-}
-.header-desktop__menu_kill {
-  display: flex;
 }

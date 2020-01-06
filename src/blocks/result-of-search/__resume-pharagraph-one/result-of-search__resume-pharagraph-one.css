@@ -1,0 +1,25 @@
+.result-of-search__resume-pharagraph-one {
+  font-family: "Robotoslab Regular";
+  font-size: 40px;
+  line-height: 46px;
+  font-style: normal;
+  font-weight: normal;
+  color: #1a1b22;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  width: calc(538px - (1440px - 100vw) / 3.33);
+  font-size: calc(40px - (1440px - 100vw) / 67.8);
+  line-height: calc(46px - (1440px - 100vw) / 56);
+}
+@media screen and (max-width: 767px) {
+  .result-of-search__resume-pharagraph-one {
+    width: calc(336px - (768px - 100vw) / 9.33);
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .result-of-search__resume-pharagraph-one {
+    width: 288px;
+  }
+}

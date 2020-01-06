@@ -1,6 +1,8 @@
+@import url(../__copyright/_big-mark/footer__copyright_big-mark.css);
+
 .footer__copyright {
   width: 130px;
-  font-family: Roboto Regular;
+  font-family: "Roboto Regular";
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
@@ -8,9 +10,7 @@
   color: #b6bcbf;
   padding-left: 98px;
 }
-.big-mark {
-  font-size: 26px;
-}
+
 @media screen and (max-width: 767px) {
   .footer__copyright {
     order: 3;

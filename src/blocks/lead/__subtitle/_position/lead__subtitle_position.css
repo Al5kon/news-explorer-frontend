@@ -1,0 +1,8 @@
+.lead__subtitle_position {
+  margin: calc(32px - (1440px - 100vw) / 42.06) auto 0;
+}
+@media screen and (max-width: 767px) {
+  .lead__subtitle_position {
+    margin: 16px auto 0;
+  }
+}

@@ -2,6 +2,10 @@
 @import url(./__search-mobile/lead__search-mobile.css);
 @import url(./__title/lead__title.css);
 @import url(./__subtitle/lead__subtitle.css);
+@import url(./__submit/lead__submit.css);
+@import url(./__search-place/lead__search-place.css);
+@import url(./__submit-mobile/lead__submit-mobile.css);
+@import url(./__search-place-mobile/lead__search-place-mobile.css);
 
 .lead {
   width: 100%;

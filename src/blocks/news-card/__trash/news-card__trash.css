@@ -6,10 +6,6 @@
   right: 24px;
   cursor: pointer;
 }
-
 .news-card__trash:hover path {
   stroke: #1a1b22;
-}
-.news-card__trash:hover .news-card__note-text {
-  display: flex;
 }

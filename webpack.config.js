@@ -15,14 +15,11 @@ const isDev = process.env.NODE_ENV === "development";
 
 module.exports = {
   entry: {
-    main: "./src/index.js",
-    pageTwo: "./src/index.js",
-    pageThree: "./src/index.js"
+    main: "./src/index.js"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "./bundles/[name].[chunkhash].js",
-    publicPath: ""
+    filename: "./bundles/[name].[chunkhash].js"
   },
   module: {
     rules: [
@@ -42,12 +39,12 @@ module.exports = {
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        loader: "file-loader?name=./src/vendor/fonts/[name].[ext]"
+        loader: "file-loader?name=/src/vendor/fonts/[name].[ext]"
       },
       {
         test: /\.(png|jpg|gif|ico|svg)$/,
         use: [
-          "file-loader?name=./images/[name].[ext]", // указали папку, куда складывать изображения
+          "file-loader?name=/src/images/[name].[ext]", // указали папку, куда складывать изображения
           {
             loader: "image-webpack-loader",
             options: {
@@ -73,13 +70,13 @@ module.exports = {
       // Означает, что:
       inject: false, // стили нельзя прописывать внутри тегов
       template: "./src/saved-news.html", // откуда брать образец для сравнения с текущим видом проекта
-      filename: "saved-news.html" // имя выходного файла, то есть того, что окажется в папке dist после сборки
+      filename: "./saved-news/index.html" // имя выходного файла, то есть того, что окажется в папке dist после сборки
     }),
     new HtmlWebpackPlugin({
       // Означает, что:
       inject: false, // стили нельзя прописывать внутри тегов
       template: "./src/about.html", // откуда брать образец для сравнения с текущим видом проекта
-      filename: "about.html" // имя выходного файла, то есть того, что окажется в папке dist после сборки
+      filename: "./about/index.html" // имя выходного файла, то есть того, что окажется в папке dist после сборки
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,

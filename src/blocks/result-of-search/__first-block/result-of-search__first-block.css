@@ -4,16 +4,7 @@
   padding-left: 104px;
   padding-bottom: 5px;
 }
-.result-of-search__start {
-  font-family: "Robotoslab Regular";
-  font-size: 40px;
-  line-height: 46px;
-  font-style: normal;
-  font-weight: normal;
-  margin-top: 85px;
-  color: #1a1b22;
-  margin-bottom: 0;
-}
+
 @media screen and (max-width: 768px) {
   .result-of-search__first-block {
     padding-left: 40px;

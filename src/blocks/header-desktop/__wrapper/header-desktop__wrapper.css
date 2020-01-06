@@ -1,0 +1,4 @@
+.header-desktop__wrapper {
+  display: flex;
+  margin-right: calc(83px - (1440px - 100%) / 15.63);
+}

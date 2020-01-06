@@ -6,9 +6,6 @@
   right: 24px;
   cursor: pointer;
 }
-.news-card__save-icon:hover .news-card__note-text {
-  display: flex;
-}
 .news-card__save-icon:hover path {
   stroke: #1a1b22;
 }

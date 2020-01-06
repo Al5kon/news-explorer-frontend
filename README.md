@@ -45,3 +45,9 @@ Diploma.Frontend
 ### v0.0.7 Fix bugs
 
 ### v0.0.8 Change README.md
+
+### v0.0.9 Fix bugs
+
+### v0.0.10 Fix bugs
+
+### v0.0.11 Fix bugs

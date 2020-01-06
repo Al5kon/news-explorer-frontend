@@ -1,5 +1,5 @@
-@import url(../../vendor/normalize.css);
-@import url(../../vendor/fonts.css);
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
 @import url(../blocks/lead/lead.css);
 @import url(../blocks/preloader/preloader.css);
 @import url(../blocks/footer/footer.css);
@@ -20,7 +20,8 @@
 
 body {
   background-color: #e5e5e5;
-  /*cursor: pointer;*/
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .page {

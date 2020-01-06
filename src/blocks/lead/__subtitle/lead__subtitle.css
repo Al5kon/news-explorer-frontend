@@ -1,3 +1,5 @@
+@import url(./_position/lead__subtitle_position.css);
+
 .lead__subtitle {
   color: white;
   font-family: "Roboto Regular";
@@ -7,13 +9,8 @@
   line-height: 24px;
   width: calc(545px - (1440px - 100vw) / 7.24);
 }
-.lead__subtitle_position {
-  margin: calc(32px - (1440px - 100vw) / 42.06) auto 0;
-}
+
 @media screen and (max-width: 767px) {
-  .lead__subtitle_position {
-    margin: 16px auto 0;
-  }
   .lead__subtitle {
     width: calc(452px - (767px - 100vw) / 2.73);
   }

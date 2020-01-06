@@ -1,12 +1,5 @@
+@import url(../__paragraph/_position/about__paragraph_position.css);
+
 .about__paragraph {
   width: auto;
-}
-.about__paragraph_position {
-  margin: 97px 67px auto 67px;
-}
-
-@media screen and (max-width: 768px) {
-  .about__paragraph_position {
-    margin-left: 24px;
-  }
 }

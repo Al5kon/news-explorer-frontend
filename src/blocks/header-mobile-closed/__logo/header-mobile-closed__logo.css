@@ -1,3 +1,6 @@
+@import url(./_white-letters/header-mobile-closed__logo_white-letters.css);
+@import url(./_black-letters/header-mobile-closed__logo_black-letters.css);
+
 .header-mobile-closed__logo {
   font-family: "Robotoslab Regular";
   font-style: normal;
@@ -5,10 +8,4 @@
   font-size: 16px;
   line-height: 24px;
   margin-left: calc(40px - (767px - 100%) / 18.67);
-}
-.header-mobile-closed__logo_white-letters {
-  color: white;
-}
-.header-mobile-closed__logo_black-letters {
-  color: #1a1b22;
 }

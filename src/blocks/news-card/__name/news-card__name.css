@@ -1,5 +1,5 @@
 .news-card__name {
-  font-family: Robotoslab Regular;
+  font-family: "Robotoslab Regular";
   font-size: calc(26px - (1440px - 100vw) / 168.25);
   line-height: calc(30px - (1440px - 100vw) / 112.17);
   color: #1a1b22;

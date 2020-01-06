@@ -1,0 +1,20 @@
+.slider__header-title {
+  font-family: "Robotoslab Regular";
+  font-size: calc(40px - (1440px - 100vw) / 67.3);
+  line-height: calc(46px - (1440px - 100vw) / 56.08);
+  font-style: normal;
+  font-weight: normal;
+  color: #1a1b22;
+}
+@media screen and (max-width: 320px) {
+  .slider__header-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider__header-title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}

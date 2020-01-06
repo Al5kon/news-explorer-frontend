@@ -1,5 +1,6 @@
 .header-mobile-open__button {
   font-family: "Roboto Regular";
+  color: #fff;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -16,7 +17,4 @@
   align-self: center;
   border: 1px solid #fff;
   outline: none;
-}
-.header-mobile-open__button_white {
-  color: #fff;
 }

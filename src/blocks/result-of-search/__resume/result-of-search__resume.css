@@ -1,33 +1,16 @@
 .result-of-search__resume {
-  padding-left: 104px;
+  padding-left: calc(104px - (1440px - 100vw) / 10.5);
   padding-bottom: 30px;
   background-color: #fff;
 }
-.result-of-search__resume-head {
-  font-family: "Roboto Regular";
-  font-size: 18px;
-  line-height: 24px;
-  font-style: normal;
-  font-weight: normal;
-  color: rgba(26, 27, 34, 0.5);
-  padding-top: 20px;
+
+@media screen and (max-width: 767px) {
+  .result-of-search__resume {
+    padding-left: calc(40px - (767px - 100vw) / 18.67);
+  }
 }
-.result-of-search__resume-pharagraph-one {
-  font-family: "Robotoslab Regular";
-  font-size: 40px;
-  line-height: 46px;
-  font-style: normal;
-  font-weight: normal;
-  color: #1a1b22;
-  margin-top: 35px;
-  margin-bottom: 30px;
-}
-.result-of-search__resume-pharagraph-two {
-  font-family: "Roboto Regular";
-  font-size: 18px;
-  line-height: 24px;
-  font-style: normal;
-  font-weight: normal;
-  color: #1a1b22;
-  margin-top: 10px;
+@media screen and (max-width: 320px) {
+  .result-of-search__resume {
+    padding-left: 16px;
+  }
 }

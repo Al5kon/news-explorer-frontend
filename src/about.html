@@ -20,21 +20,21 @@
         <h3 class="header-desktop__logo header-desktop__logo_black">
           NewsExplorer
         </h3>
-        <div class="header-wrapper">
+        <div class="header-desktop__wrapper">
           <a
-            href="index.html"
-            class="header-desktop__menu"
+            href="../"
+            class="header-desktop__menu header-desktop__menu_black-hover"
             >Главная</a
           >
           <a
             href="#"
             class="header-desktop__menu header-desktop__menu_black-line header-desktop__menu_black-letters"
-            >О проекте</a
+            >О&nbsp;проекте</a
           >
           <a
-            href="saved-news.html"
-            class="header-desktop__menu header-desktop__menu_kill"
-            >Сохранённые статьи</a
+            href="../saved-news/"
+            class="header-desktop__menu header-desktop__menu_kill header-desktop__menu_black-hover"
+            >Сохранённые&nbsp;статьи</a
           >
           <button
             type="submit"
@@ -88,25 +88,14 @@
         </div>
         <div class="header-mobile-open__wrapper">
           <div class="header-mobile-open__menu-group">
+            <a href="../" class="header-mobile-open__menu">Главная</a>
+            <a href="#" class="header-mobile-open__menu">О&nbsp;проекте</a>
             <a
-              href="index.html"
-              class="header-mobile-open__menu header-mobile-open__menu_grey-letters"
-              >Главная</a
+              href="../saved-news/"
+              class="header-mobile-open__menu header-mobile-open__menu_kill"
+              >Сохранённые&nbsp;статьи</a
             >
-            <a
-              href="#"
-              class="header-mobile-open__menu header-mobile-open__menu_white-letters"
-              >О проекте</a
-            >
-            <a
-              href="saved-news.html"
-              class="header-mobile-open__menu header-mobile-open__menu_kill header-mobile-open__menu_grey-letters"
-              >Сохранённые статьи</a
-            >
-            <button
-              type="submit"
-              class="header-mobile-open__button header-mobile-open__button_white"
-            >
+            <button type="submit" class="header-mobile-open__button">
               Авторизоваться
             </button>
           </div>
@@ -229,11 +218,23 @@
         </div>
       </section>
       <section class="about">
-        <img
-          src="<%=require('./images/imageauthor.jpg')%>"
-          alt="Фото автора"
-          class="about__avatar about__avatar_position"
-        />
+        <picture>
+          <source
+            class="about__avatar about__avatar_position"
+            srcset="<%=require('../src/images/imageauthor.jpg') %>"
+            media="(min-width: 768px)"
+          />
+          <source
+            class="about__avatar about__avatar_position"
+            srcset="<%=require('../src/images/imageauthor768.jpg') %>"
+            media="(max-width: 767px)"
+          />
+          <img
+            srcset="<%=require('./images/imageauthor.jpg') %>"
+            alt="Фото автора"
+            class="about__avatar about__avatar_position"
+          />
+        </picture>
         <div class="about__paragraph about__paragraph_position">
           <h3 class="about__title">Об авторе</h3>
           <p class="about__description">
@@ -350,54 +351,67 @@
         </button>
       </section>
       <div class="popup">
-        <div class="popup__content">
+        <div class="popup__content popup__content_position-big">
           <svg
-            width="34"
-            height="34"
+            width="40"
+            height="40"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
             class="popup__close"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M31.113 0l2.121 2.121-14.496 14.496 14.496 14.496-2.121 2.121-14.496-14.496L2.121 33.234 0 31.113l14.496-14.496L0 2.12 2.121 0l14.496 14.496L31.113 0z"
+              d="M22.357 20l8.821 8.822-2.357 2.357L18.35 20.706a1 1 0 010-1.414L28.82 8.82l2.357 2.357L22.357 20z"
+              fill="#fff"
+            />
+            <path
+              d="M18.13 20l-8.82 8.822 2.356 2.357 10.472-10.472a1 1 0 000-1.414L11.666 8.82 9.31 11.178 18.131 20z"
               fill="#fff"
             />
           </svg>
           <h3 class="popup__title">Регистрация</h3>
-          <form class="popup__form">
+          <form autocomplete="off" class="popup__form">
             <p class="popup__field-name">Email</p>
             <input
               type="email"
               required
+              pattern="^[\w-]+@[\w-]+\.[\w-]{1,}$"
               autocomplete="off"
               class="popup__input"
               placeholder="Введите почту"
             />
-            <span id="error-email-logout"></span>
+            <span id="error-email-logout" class="popup__invalid-message"
+              >Неправильный формат email
+            </span>
             <p class="popup__field-name">Пароль</p>
             <input
               type="password"
               required
               minlength="4"
-              maxlength="8"
+              maxlength="10"
               autocomplete="off"
               class="popup__input"
               placeholder="Введите пароль"
             />
-            <span id="error-password-logout"></span>
+            <span id="error-password-logout" class="popup__invalid-message"
+              >Неправильный формат пароля</span
+            >
             <p class="popup__field-name">Имя</p>
             <input
               type="text"
+              pattern="^[А-ЯЁ]{1}[а-яё]*(-[А-ЯЁ]{1}[а-яё]*)?$"
               minlength="2"
-              maxlength="30"
+              maxlength="20"
               required
               autocomplete="off"
               class="popup__input"
               placeholder="Введите свое имя"
             />
-            <span id="error-name"></span>
+            <span id="error-name" class="popup__invalid-message"
+              >Неправильный формат имени</span
+            >
+            <span class="popup__invalid-message"
+              >Такой пользователь уже есть</span
+            >
             <button type="submit" class="popup__button">
               Зарегистрироваться
             </button>
@@ -408,18 +422,20 @@
         </div>
       </div>
       <div class="popup">
-        <div class="popup__content">
+        <div class="popup__content popup__content_position-big">
           <svg
-            width="34"
-            height="34"
+            width="40"
+            height="40"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
             class="popup__close"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M31.113 0l2.121 2.121-14.496 14.496 14.496 14.496-2.121 2.121-14.496-14.496L2.121 33.234 0 31.113l14.496-14.496L0 2.12 2.121 0l14.496 14.496L31.113 0z"
+              d="M22.357 20l8.821 8.822-2.357 2.357L18.35 20.706a1 1 0 010-1.414L28.82 8.82l2.357 2.357L22.357 20z"
+              fill="#fff"
+            />
+            <path
+              d="M18.13 20l-8.82 8.822 2.356 2.357 10.472-10.472a1 1 0 000-1.414L11.666 8.82 9.31 11.178 18.131 20z"
               fill="#fff"
             />
           </svg>
@@ -433,7 +449,9 @@
               class="popup__input"
               placeholder="Введите почту"
             />
-            <span id="error-email-login"></span>
+            <span id="error-email-login" class="popup__invalid-message"
+              >Неправильный формат email</span
+            >
             <p class="popup__field-name">Пароль</p>
             <input
               type="password"
@@ -444,31 +462,35 @@
               class="popup__input"
               placeholder="Введите пароль"
             />
-            <span id="error-password-login"></span>
+            <span id="error-password-login" class="popup__invalid-message"
+              >Неправильный формат пароля</span
+            >
             <button type="submit" class="popup__button">Войти</button>
             <p class="popup__enter-alternative">
-              или <a href="" class="popup__link">Зарегистрироваться</a>
+              или <a href="#" class="popup__link">Зарегистрироваться</a>
             </p>
           </form>
         </div>
       </div>
       <div class="popup">
-        <div class="popup__content popup__content_resume">
+        <div class="popup__content popup__content_position-small">
           <h3 class="popup__title">Пользователь успешно зарегистрирован</h3>
           <p class="popup__enter-link">
-            <a href="" class="popup__enter-link">Выполнить вход</a>
+            <a href="#" class="popup__enter-link">Выполнить вход</a>
           </p>
           <svg
-            width="34"
-            height="34"
+            width="40"
+            height="40"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
             class="popup__close"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M31.113 0l2.121 2.121-14.496 14.496 14.496 14.496-2.121 2.121-14.496-14.496L2.121 33.234 0 31.113l14.496-14.496L0 2.12 2.121 0l14.496 14.496L31.113 0z"
+              d="M22.357 20l8.821 8.822-2.357 2.357L18.35 20.706a1 1 0 010-1.414L28.82 8.82l2.357 2.357L22.357 20z"
+              fill="#fff"
+            />
+            <path
+              d="M18.13 20l-8.82 8.822 2.356 2.357 10.472-10.472a1 1 0 000-1.414L11.666 8.82 9.31 11.178 18.131 20z"
               fill="#fff"
             />
           </svg>
@@ -476,17 +498,21 @@
       </div>
       <footer class="footer">
         <p class="footer__copyright">
-          <span class="big-mark">&reg;</span>2019 Supersite
+          <span class="footer__copyright_big-mark">&reg;</span>2019&nbsp;Supersite
         </p>
-        <div class="footer__link">
-          <a href="index.html" class="link-property">Главная</a>
-          <a href="about.html" class="link-property">О проекте</a>
-          <a
-            href="https://praktikum.yandex.ru/profile/web-developer/"
-            class="link-property"
-            >Яндекс.Практикум</a
-          >
-        </div>
+        <nav class="footer__link-group">
+          <ul class="footer__link-list">
+            <li><a href="../" class="footer__link">Главная</a></li>
+            <li><a href="../about/" class="footer__link">О&nbsp;проекте</a></li>
+            <li>
+              <a
+                href="https://praktikum.yandex.ru/profile/web-developer/"
+                class="footer__link"
+                >Яндекс.Практикум</a
+              >
+            </li>
+          </ul>
+        </nav>
         <div class="footer__logo-group">
           <a href="https://github.com/Al5kon" target="blank">
             <svg
@@ -518,7 +544,7 @@
           </a>
         </div>
       </footer>
-      <script src="<%= htmlWebpackPlugin.files.chunks.pageTwo.entry %>"></script>
+      <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
     </div>
   </body>
 </html>

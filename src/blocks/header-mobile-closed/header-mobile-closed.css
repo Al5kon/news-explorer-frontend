@@ -1,14 +1,11 @@
 @import url(./__head/header-mobile-closed__head.css);
 @import url(./__logo/header-mobile-closed__logo.css);
 @import url(./__stripes/header-mobile-closed__stripes.css);
+@import url(./_white/header-mobile-closed_white.css);
 
 .header-mobile-closed {
   display: none;
   flex-direction: column;
-}
-
-.header-mobile-closed_white {
-  background-color: #fff;
 }
 
 @media screen and (max-width: 767px) {

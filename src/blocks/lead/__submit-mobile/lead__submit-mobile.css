@@ -1,0 +1,23 @@
+.lead__submit-mobile {
+  background-color: #2f71e5;
+  width: 288px;
+  height: 56px;
+  border-radius: 100px 100px 100px 100px;
+  font-family: "Roboto Regular";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  margin: 0 auto 0;
+}
+.lead__submit-mobile:hover {
+  background: #347eff;
+  display: block;
+}
+.lead__submit-mobile:active:hover {
+  background: #2a65cc;
+  display: block;
+}
