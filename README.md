@@ -4,6 +4,12 @@ Diploma.Frontend
 
 ## demo version: https://github.com/Al5kon.github.io/news-explorer-frontend/
 
+## www.news-explorer.gq
+
+## news-explorer.gq
+
+## 84.201.134.80 - public iPv4
+
 ## Instruction: use "npm" to install and run it
 
 ### Clone the git repository
