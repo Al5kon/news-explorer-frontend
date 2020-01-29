@@ -72,12 +72,6 @@ module.exports = {
       template: "./src/saved-news.html", // откуда брать образец для сравнения с текущим видом проекта
       filename: "./saved-news/index.html" // имя выходного файла, то есть того, что окажется в папке dist после сборки
     }),
-    new HtmlWebpackPlugin({
-      // Означает, что:
-      inject: false, // стили нельзя прописывать внутри тегов
-      template: "./src/about.html", // откуда брать образец для сравнения с текущим видом проекта
-      filename: "./about/index.html" // имя выходного файла, то есть того, что окажется в папке dist после сборки
-    }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: cssnano,

@@ -57,3 +57,9 @@ Diploma.Frontend
 ### v0.0.10 Fix bugs
 
 ### v0.0.11 Fix bugs
+
+### v0.0.12 Fix bugs
+
+### v0.0.13 Fix bugs
+
+### v0.0.14 Fix bugs

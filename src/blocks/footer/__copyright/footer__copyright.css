@@ -1,7 +1,7 @@
 @import url(../__copyright/_big-mark/footer__copyright_big-mark.css);
 
 .footer__copyright {
-  width: 130px;
+  width: auto;
   font-family: "Roboto Regular";
   font-weight: normal;
   font-style: normal;
@@ -9,6 +9,7 @@
   line-height: 22px;
   color: #b6bcbf;
   padding-left: 98px;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {

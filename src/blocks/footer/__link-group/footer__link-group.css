@@ -1,9 +1,9 @@
 .footer__link-group {
   display: flex;
   width: 400px;
-  align-items: center;
   justify-content: space-between;
   padding-right: 40px;
+  align-items: center;
 }
 @media screen and (max-width: 767px) {
   .footer__link-group {
