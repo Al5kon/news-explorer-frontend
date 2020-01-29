@@ -19,7 +19,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "./bundles/[name].[chunkhash].js"
+    filename: "./[name]/[name].[chunkhash].js"
   },
   module: {
     rules: [
@@ -58,7 +58,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "./bundles/[name].[contenthash].css"
+      filename: "./[name]/[name].[contenthash].css"
     }),
     new HtmlWebpackPlugin({
       // Означает, что:
