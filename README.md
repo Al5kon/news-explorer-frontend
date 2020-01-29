@@ -14,7 +14,7 @@ Diploma.Frontend
 
 ### Clone the git repository
 
-#### git clone https://github.com/zuhijan/news-explorer.git
+#### git clone https://github.com/Al5kon/news-explorer-frontend.git
 
 ### Install npm dependencies
 
@@ -63,3 +63,7 @@ Diploma.Frontend
 ### v0.0.13 Fix bugs
 
 ### v0.0.14 Fix bugs
+
+### v0.0.15 Delete page
+
+### v0.0.16 Fix bugs
