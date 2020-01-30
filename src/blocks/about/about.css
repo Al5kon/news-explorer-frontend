@@ -1,0 +1,17 @@
+@import url(./__avatar/about__avatar.css);
+@import url(./__paragraph/about__paragraph.css);
+@import url(./__paragraph/about__paragraph.css);
+@import url(./__title/about__title.css);
+@import url(./__description/about__description.css);
+
+.about {
+  display: flex;
+  background-color: #fff;
+  padding-bottom: 70px;
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    display: block;
+  }
+}

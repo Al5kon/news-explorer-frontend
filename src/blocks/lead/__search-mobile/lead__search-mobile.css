@@ -1,0 +1,16 @@
+.lead__search-mobile {
+  display: none;
+  flex-direction: column;
+  margin: 65px auto 80px;
+}
+
+.lead__search-mobile:focus-within .lead__submit {
+  background: #347eff;
+  display: block;
+}
+
+@media screen and (max-width: 320px) {
+  .lead__search-mobile {
+    display: flex;
+  }
+}

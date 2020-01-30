@@ -1,0 +1,12 @@
+@import url(./__big-message/news-not-found__big-message.css);
+@import url(./__small-message/news-not-found__small-message.css);
+
+.news-not-found {
+  background-color: #f5f6f7;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 86px;
+  padding-bottom: 82px;
+}

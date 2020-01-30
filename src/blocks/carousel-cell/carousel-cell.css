@@ -1,0 +1,24 @@
+@import url(./__date/carousel-cell__date.css);
+@import url(./__name/carousel-cell__name.css);
+@import url(./__email/carousel-cell__email.css);
+@import url(./__rewiew/carousel-cell__rewiew.css);
+@import url(./__author/carousel-cell__author.css);
+@import url(./__photo/carousel-cell__photo.css);
+@import url(./__contacts/carousel-cell__contacts.css);
+
+.carousel-cell {
+    background: #fff;
+    border-radius: 16px;
+    width: 360px;
+    height: 248px;
+    flex-shrink: 0;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 20px;
+}
+
+
+
+
+
+

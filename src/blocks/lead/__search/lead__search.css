@@ -1,0 +1,20 @@
+.lead__search {
+  display: flex;
+  justify-content: flex-end;
+  margin: 65px auto 80px;
+  width: calc(600px - (1440px - 100vw) / 3.36);
+  height: calc(60px - (1440px - 100vw) / 168);
+  background-color: white;
+  border-radius: 100px 100px 100px 100px;
+}
+
+.lead__search:focus-within .lead__submit {
+  background: #347eff;
+  display: block;
+}
+
+@media screen and (max-width: 320px) {
+  .lead__search {
+    display: none;
+  }
+}

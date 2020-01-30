@@ -1,0 +1,7 @@
+.header-mobile-closed__head {
+  display: flex;
+  min-height: 56px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,19 @@
+@import url(./__circle/preloader__circle.css);
+@import url(./__comment/preloader__comment.css);
+
+.preloader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 262px;
+  background-color: #f5f6f7;
+  padding-top: 20px;
+  display: none;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

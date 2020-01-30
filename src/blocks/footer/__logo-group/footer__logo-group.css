@@ -1,0 +1,14 @@
+.footer__logo-group {
+  display: flex;
+  width: 70px;
+  align-items: center;
+  padding-right: 103px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__logo-group {
+    padding-right: calc(103px - (767px - 100vw) / 5.08);
+    align-items: flex-start;
+  }
+}

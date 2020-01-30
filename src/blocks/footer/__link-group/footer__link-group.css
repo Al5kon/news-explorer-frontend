@@ -1,0 +1,15 @@
+.footer__link-group {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  padding-right: 40px;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .footer__link-group {
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(400px - (767px - 100vw) / 1.788);
+    padding-left: 24px;
+  }
+}

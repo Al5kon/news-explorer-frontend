@@ -1,0 +1,11 @@
+.news-card__date {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  color: #b6bcbf;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 20px;
+}

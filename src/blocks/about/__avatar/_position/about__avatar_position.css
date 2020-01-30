@@ -1,0 +1,15 @@
+.about__avatar_position {
+  margin-top: 82px;
+  margin-left: 98px;
+}
+@media screen and (max-width: 768px) {
+  .about__avatar_position {
+    margin-left: calc(98px - (767px - 100vw) / 6.04);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__avatar_position {
+    margin-left: 24px;
+  }
+}

@@ -1,0 +1,21 @@
+@import url(./_white-letters/header-desktop__menu_white-letters.css);
+@import url(./_white-hover/header-desktop__menu_white-hover.css);
+@import url(./_black-letters/header-desktop__menu_black-letters.css);
+@import url(./_black-hover/header-desktop__menu_black-hover.css);
+@import url(./_white-line/header-desktop__menu_white-line.css);
+@import url(./_black-line/header-desktop__menu_black-line.css);
+@import url(./_kill/header-desktop__menu_kill.css);
+
+.header-desktop__menu {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  height: 100%;
+  margin-bottom: 0;
+  padding-bottom: 28px;
+  padding-top: 20px;
+  text-decoration: none;
+  margin-right: 45px;
+}

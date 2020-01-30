@@ -1,0 +1,14 @@
+@import url("./__resume/result-of-search__resume.css");
+@import url("./__first-block/result-of-search__first-block.css");
+@import url(./__button/result-of-search__button.css);
+@import url(./__start/result-of-search__start.css);
+@import url(./__resume-head/result-of-search__resume-head.css);
+@import url(./__resume-pharagraph-one/result-of-search__resume-pharagraph-one.css);
+@import url(./__resume=pharagraph-two/result-of-search__resume-pharagraph-two.css);
+
+.result-of-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5f6f7;
+}

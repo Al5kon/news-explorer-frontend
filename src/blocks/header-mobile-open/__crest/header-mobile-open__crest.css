@@ -1,0 +1,6 @@
+.header-mobile-open__crest {
+  display: flex;
+  padding-right: calc(88px - (767px - 100%) / 6.22);
+  width: calc(96px - (767px - 100%) / 6.22);
+  height: calc(96px - (767px - 100%) / 6.22);
+}

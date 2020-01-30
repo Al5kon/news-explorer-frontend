@@ -1,0 +1,6 @@
+.header-desktop__menu_white-hover {
+  color: #b6bcbf;
+}
+.header-desktop__menu_white-hover:hover {
+  color: white;
+}

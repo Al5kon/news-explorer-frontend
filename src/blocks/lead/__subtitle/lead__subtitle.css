@@ -1,0 +1,22 @@
+@import url(./_position/lead__subtitle_position.css);
+
+.lead__subtitle {
+  color: white;
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  width: calc(545px - (1440px - 100vw) / 7.24);
+}
+
+@media screen and (max-width: 767px) {
+  .lead__subtitle {
+    width: calc(452px - (767px - 100vw) / 2.73);
+  }
+}
+@media screen and (max-width: 320px) {
+  .lead__subtitle {
+    width: 285px;
+  }
+}

@@ -1,0 +1,16 @@
+.result-of-search__resume {
+  padding-left: calc(104px - (1440px - 100vw) / 10.5);
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .result-of-search__resume {
+    padding-left: calc(40px - (767px - 100vw) / 18.67);
+  }
+}
+@media screen and (max-width: 320px) {
+  .result-of-search__resume {
+    padding-left: 16px;
+  }
+}

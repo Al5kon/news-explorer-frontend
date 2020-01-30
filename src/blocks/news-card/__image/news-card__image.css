@@ -1,0 +1,13 @@
+.news-card__image {
+  width: 100%;
+  height: calc(272px - (1440px - 100vw) / 5.52);
+  background-image: url("../../../images/image_08.png");
+  border-radius: 5% 5% 0 0;
+  position: relative;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .news-card__image {
+    height: 196px;
+  }
+}

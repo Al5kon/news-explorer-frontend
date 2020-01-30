@@ -1,0 +1,15 @@
+.result-of-search__resume-pharagraph-two {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  color: #1a1b22;
+  margin-top: 10px;
+  width: calc(538px - (1440px - 100vw) / 3.33);
+}
+@media screen and (max-width: 320px) {
+  .result-of-search__resume-pharagraph-two {
+    width: 288px;
+  }
+}

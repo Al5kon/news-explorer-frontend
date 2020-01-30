@@ -1,0 +1,22 @@
+@import url(./__search/lead__search.css);
+@import url(./__search-mobile/lead__search-mobile.css);
+@import url(./__title/lead__title.css);
+@import url(./__subtitle/lead__subtitle.css);
+@import url(./__submit/lead__submit.css);
+@import url(./__search-place/lead__search-place.css);
+@import url(./__submit-mobile/lead__submit-mobile.css);
+@import url(./__search-place-mobile/lead__search-place-mobile.css);
+
+.lead {
+  width: 100%;
+  background-image: url("../../images/georgia.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 320px) {
+  .lead {
+    height: 536px;
+  }
+}

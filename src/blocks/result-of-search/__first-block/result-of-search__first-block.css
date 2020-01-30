@@ -1,0 +1,17 @@
+.result-of-search__first-block {
+  display: flex;
+  max-width: 1440px;
+  padding-left: 104px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .result-of-search__first-block {
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .result-of-search__first-block {
+    padding-left: 16px;
+  }
+}

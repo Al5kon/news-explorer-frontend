@@ -1,0 +1,17 @@
+.footer__link {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  color: #1a1b22;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__link {
+    line-height: 40px;
+  }
+}

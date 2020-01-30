@@ -1,0 +1,11 @@
+@import url(./_black/header-desktop__logo_black.css);
+@import url(./_white/header-desktop__logo_white.css);
+
+.header-desktop__logo {
+  font-family: "Robotoslab Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: calc(102px - (1440px - 100%) / 10.84);
+}

@@ -1,0 +1,19 @@
+.news-list {
+  background-color: #f5f6f7;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    calc(400px - (1440px - 100vw) / 4.21)
+  );
+  grid-template-rows: repeat(auto-fill, calc(576px - (1440px - 100vw) / 4.61));
+  grid-gap: 16px 16px;
+  justify-content: center;
+  padding-top: 62px;
+  margin-bottom: 62px;
+}
+@media screen and (max-width: 767px) {
+  .news-list {
+    grid-template-columns: repeat(auto-fill, 288px);
+    grid-template-rows: repeat(auto-fill, 440px);
+  }
+}
